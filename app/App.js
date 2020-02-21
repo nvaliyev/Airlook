@@ -1,12 +1,13 @@
-import React from 'react';
+import React,{Component, useState, useEffect} from 'react';
 import 'react-native-gesture-handler';
 import {View, Text} from 'react-native';
+import SwitchNavigator from './modules/navigation/switchNavigator';
 
-import Mynavigation from './app/navigation/Drawer';
-
-class App extends React.Component {
+class App extends Component {
   render() {
-    return <Mynavigation />;
+    
+    return <SwitchNavigator/>;
+
   }
 }
 

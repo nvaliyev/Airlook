@@ -1,27 +1,21 @@
 
 import React, { Component } from 'react';
 import {
-  SafeAreaView,
   View,
   Text,
   TouchableOpacity
 } from 'react-native';
-import { styles } from '../styles/flights'
+import { styles } from './style';
 
 
-class Flights extends Component {
+export default class SignUpScreen extends  Component {
 
-  render() {
+  render() { 
     return (
 
-
       <View style={styles.container}>
-
-        <TouchableOpacity>
-
-
-
-        </TouchableOpacity>
+      
+      <Text> SignUpScreen </Text>
 
       </View>
     )
@@ -34,4 +28,3 @@ class Flights extends Component {
 
 
 
-export default Flights;
