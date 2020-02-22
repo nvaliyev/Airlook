@@ -8,7 +8,9 @@ import FlightScreen from '../../../../views/flightScreen';
 import SettingScreen from '../../../../views/settingScreen';
 
 
- const DrawerMenu = createDrawerNavigator(
+
+
+export const DrawerMenu = createDrawerNavigator(
   {
   Flights: {
     screen: FlightScreen,
@@ -23,7 +25,10 @@ import SettingScreen from '../../../../views/settingScreen';
       drawerLabel: 'Settings',
     },
 }}
+
 )
+
+
  export default createAppContainer(DrawerMenu)
 
   

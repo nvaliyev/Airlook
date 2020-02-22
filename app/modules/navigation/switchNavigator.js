@@ -4,7 +4,6 @@ import { createAppContainer } from 'react-navigation';
 import { Transition } from 'react-native-reanimated';
 import { ROUTES } from '../../servises/routes/';
 import { Appstack } from './stackNavigation/appstackNavigation';
-import {DrawerMenu} from './menu/drawer';
 import {LaunchScreen} from '../../views/launchScreen';
 
 const SwitchNavigator = createAppContainer(
@@ -12,6 +11,7 @@ const SwitchNavigator = createAppContainer(
     {
       LaunchScreen,
       Appstack,
+      
     },
     {
       initialRouteName: ROUTES.LaunchScreen,
