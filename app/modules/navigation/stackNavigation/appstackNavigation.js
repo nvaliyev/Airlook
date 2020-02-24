@@ -32,7 +32,7 @@ export const DrawerMenu = createDrawerNavigator(
     },
   },
 
-  {drawerWidth: Dimensions.get('window').width - 130,
+  {drawerWidth: Dimensions.get('window').width - 70,
   contentComponent: ({navigation}) => <DrawerContent navigation={navigation} />
 },
   {initialRouteName: 'Flights'},

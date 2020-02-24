@@ -12,7 +12,7 @@ export const DrawerContent = ({navigation}) => {
       <View style={styles.top}>
 {Myimage.icon}
       </View>
-      <View style={styles.row} />
+      <View style={styles.content}>
       <TouchableOpacity
         onPress={() => {
           navigation.navigate(ROUTES.SettingScreen);
@@ -21,6 +21,7 @@ export const DrawerContent = ({navigation}) => {
 {iFontAwesome.settings}
         <Text style= {styles.text}>Settings</Text>
       </TouchableOpacity>
+<View style={styles.logout}>
       <TouchableOpacity
         onPress={() => {
           navigation.navigate(ROUTES.LoginOrRegister);
@@ -29,7 +30,10 @@ export const DrawerContent = ({navigation}) => {
           {iSimpleLineIcons.logout}
         <Text style= {styles.text}>Log Out</Text>
       </TouchableOpacity>
-      <View />
+
+      </View>
     </View>
+    </View>
+  
   );
 };

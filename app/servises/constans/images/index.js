@@ -9,7 +9,7 @@ export const Myimage = {
     <Image source={require('../../../assets/Icon.png')} style={{width: 150,resizeMode:'contain',alignSelf:'center',justifyContent:'center'}} />
   ),
   icon:( 
-    <Image source={require('../../../assets/logo.png')} style={{width: 200, resizeMode:'contain'}} />
+    <Image source={require('../../../assets/logo.png')} style={{width: 200, resizeMode:'contain', maxHeight:250}} />
 
   )
 };

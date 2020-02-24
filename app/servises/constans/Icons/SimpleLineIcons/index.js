@@ -3,6 +3,6 @@ import React from 'react';
 import { config } from '../../../utils';
 
 export const iSimpleLineIcons = {
-logout:(<Icon name='logout' size = {18} color={config.indigo}/>),
+logout:(<Icon name='logout' size = {25} color={config.eminence}/>),
 
 }
