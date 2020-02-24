@@ -6,7 +6,10 @@ import {
   TouchableOpacity
 } from 'react-native';
 import { styles } from './style';
-
+import { Login } from '../../../components/Login';
+import { config } from '../../../servises/utils';
+import { ROUTES } from '../../../servises/routes';
+import { MButton } from '../../../components/mButton';
 
 export default class LoginScreen extends  Component {
 
@@ -15,8 +18,7 @@ export default class LoginScreen extends  Component {
 
       <View style={styles.container}>
       
-      <Text> LoginScreen </Text>
-
+            <Login navigation={this.props.navigation}/>
       </View>
     )
   }

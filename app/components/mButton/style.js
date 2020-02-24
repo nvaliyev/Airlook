@@ -1,5 +1,5 @@
 import {StyleSheet} from 'react-native';
-import { config } from '../../../servises/utils';
+import { config } from '../../servises/utils';
 
 export const styles = StyleSheet.create({
     button: {
@@ -9,11 +9,18 @@ export const styles = StyleSheet.create({
       backgroundColor:config.indigo,
       padding:20,
       margin:3, 
-      marginHorizontal:20,
-      borderRadius:5
+      marginHorizontal:25,
+      borderRadius:5,
+      shadowRadius:10,
+      shadowColor:"#000",
+      shadowOpacity:0.6,
+    shadowOffset:{width:0,height:8,},
+    elevation:5
     },
     text: {
      color:config.lilac,
+     fontSize:18,
+    
 
     }
 });

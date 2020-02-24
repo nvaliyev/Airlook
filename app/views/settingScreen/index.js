@@ -10,11 +10,11 @@ import { styles } from './style';
 
 export default class SettingScreen extends  Component {
 
-  render() { 
+  render() {
     return (
 
       <View style={styles.container}>
-      
+
       <Text> SettingScreen </Text>
 
       </View>

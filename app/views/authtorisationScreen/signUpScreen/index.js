@@ -6,6 +6,7 @@ import {
   TouchableOpacity
 } from 'react-native';
 import { styles } from './style';
+import { SignUp } from '../../../components/signUp';
 
 
 export default class SignUpScreen extends  Component {
@@ -15,8 +16,7 @@ export default class SignUpScreen extends  Component {
 
       <View style={styles.container}>
       
-      <Text> SignUpScreen </Text>
-
+<SignUp navigation={this.props.navigation}/>
       </View>
     )
   }
