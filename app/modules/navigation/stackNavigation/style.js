@@ -8,13 +8,14 @@ import LoginScreen from '../../../views/authtorisationScreen/loginScreen';
 import SignUpScreen from '../../../views/authtorisationScreen/signUpScreen';
 import {ROUTES} from '../../../servises/routes';
 import {config} from '../../../servises/utils';
-import Icon from 'react-native-vector-icons/Entypo';
 
 export const NavigationOptions = {
   
     headerBackground: () => Gradient,
     headerStyle: {
-      height:65,
+      height:50,
+      elevation:15,
+      
     },
     headerTintColor:config.lilac,
     headerTitleAlign: 'center',
@@ -26,8 +27,8 @@ export const NavigationOptions = {
 const Gradient = (
   <LinearGradient
     colors={[config.indigo, config.eminence]}
-    style={{flex: 1}}
-    start={{x: 0, y: 0}}
+    style={{flex: 1 ,}}
+    start={{x: 0, y: 3}}
     end={{x: 1, y: 0}}
   />
 );

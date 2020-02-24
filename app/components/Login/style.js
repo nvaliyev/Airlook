@@ -19,11 +19,9 @@ paddingHorizontal:15,
 marginHorizontal:25,
 marginBottom:6,
 borderRadius:5,
-elevation:5,
+elevation:10,
 shadowColor:'black',
-borderWidth:0.5,
 borderColor:config.eminence,
-color:config.eminence,
     },
 
 });

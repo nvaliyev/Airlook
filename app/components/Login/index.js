@@ -1,5 +1,5 @@
 import React, {Component,useState} from 'react';
-import {View, Text, TouchableOpacity,TextInput} from 'react-native';
+import {View, Text, TouchableOpacity,TextInput,AsyncStorage} from 'react-native';
 import {styles} from './style';
 import { MButton } from '../mButton';
 import { ROUTES } from '../../servises/routes';

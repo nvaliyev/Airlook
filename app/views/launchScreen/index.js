@@ -1,11 +1,10 @@
 import React,{ useEffect} from 'react';
-import {Image, View, StatusBar} from 'react-native';
+import {Image, View, StatusBar,ActivityIndicator} from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
 import { config } from '../../servises/utils';
 import { Myimage } from '../../servises/constans/images';
 import { ROUTES } from '../../servises/routes';
 import LoginOrRegister from '../authtorisationScreen/loginOrRegsiter';
-
 
 
  export const LaunchScreen = ({navigation}) => {
@@ -14,7 +13,7 @@ import LoginOrRegister from '../authtorisationScreen/loginOrRegsiter';
         const timer= setTimeout(() => 
         {
             navigation.navigate(ROUTES.LoginOrRegister);
-        },2000)
+        },2500)
         return () => {
             clearTimeout(timer)
         };
@@ -22,11 +21,12 @@ import LoginOrRegister from '../authtorisationScreen/loginOrRegsiter';
 
     return (
       <LinearGradient
-        colors={[config.indigo, config.eminence]}
+        colors={[config.eminence,config.indigo]}
         style={{flex: 1}}
-        start={{x: 0, y: 0}}
+        start={{x: 1, y: 2}}
         end={{x: 1, y: 0}}>
     {Myimage.airplane}
+    <ActivityIndicator size="large" color={config.eminence} />
       </LinearGradient>
     );
   }

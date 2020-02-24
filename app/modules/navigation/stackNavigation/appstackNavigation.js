@@ -8,15 +8,15 @@ import SignUpScreen from '../../../views/authtorisationScreen/signUpScreen';
 import {ROUTES} from '../../../servises/routes';
 import SettingScreen from '../../../views/settingScreen';
 import FlightScreen from '../../../views/flightScreen';
-import Icon from 'react-native-vector-icons/Entypo';
 import {NavigationOptions} from './style';
 import { DrawerContent } from '../../../components/Sidebar';
+import { iFontAwesome } from '../../../servises/constans/Icons/FontAwesome';
 const Navigationdraw = ({navigation}) => {
   return (
     <View style={{flexDirection: 'row', marginLeft: 15}}>
       <TouchableOpacity onPress={() => navigation.toggleDrawer()}>
-        <Icon name="menu" size={35} color="white" />
-      </TouchableOpacity>
+  {iFontAwesome.menu}   
+</TouchableOpacity> 
     </View>
   );
 };
@@ -27,6 +27,7 @@ export const DrawerMenu = createDrawerNavigator(
       screen: FlightScreen,
       navigationOptions: {
         drawerLabel: 'Flights',
+        
       },
     },
   },

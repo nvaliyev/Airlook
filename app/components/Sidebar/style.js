@@ -8,10 +8,14 @@ export const styles = StyleSheet.create({
   },
   top: {
     width: '100%',
-    height: '15%',
+    height: '20%',
     backgroundColor: config.lilac,
     justifyContent: 'center',
     alignItems: 'center',
+    elevation: 10,
+    shadowRadius: 0.45,
+    shadowOffset: {width: 0, height: 4},
+    shadowColor: 'black',
   },
   logo: {
     alignContent: 'center',
@@ -23,9 +27,9 @@ export const styles = StyleSheet.create({
     textShadowColor: config.indigo,
     textShadowOffset: {width: 1, height: 1},
   },
-  text:{fontSize:16, marginHorizontal:10},
+  text: {fontSize: 18, marginHorizontal: 11},
   row: {
-    height: 5,
+    height: 1,
     width: '100%',
     backgroundColor: config.indigo,
   },
@@ -34,14 +38,13 @@ export const styles = StyleSheet.create({
     height: 100,
     backgroundColor: config.lilac,
   },
-  btn:{
-   flexDirection:'row',
-   marginHorizontal:10,
-   height:50,
-   justifyContent:'flex-start',
-   alignItems:'center',
-   borderBottomWidth:1,
-   borderBottomColor:config.eminence
-
-  }
+  btn: {
+    flexDirection: 'row',
+    marginHorizontal: 15,
+    height: 55,
+    justifyContent: 'flex-start',
+    alignItems: 'center',
+    borderBottomWidth: 2,
+    borderBottomColor: config.eminence,
+  },
 });
