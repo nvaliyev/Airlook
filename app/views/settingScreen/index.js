@@ -7,16 +7,12 @@ import {
 } from 'react-native';
 import { styles } from './style';
 
-
-export default class SettingScreen extends  Component {
+export default class SettingScreen extends Component {
 
   render() {
     return (
-
       <View style={styles.container}>
-
-      <Text> SettingScreen </Text>
-
+        <Text> SettingScreen </Text>
       </View>
     )
   }

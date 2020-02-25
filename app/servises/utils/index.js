@@ -8,10 +8,10 @@ const Utils = {
     eminence: '#6f347c',
     lilac: '#F7F9FC',
   };
+  
   export const config = {
     ...Utils,
     ...allcolor
-
   }
 
 

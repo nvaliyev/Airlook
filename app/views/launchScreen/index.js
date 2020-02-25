@@ -2,7 +2,7 @@ import React,{ useEffect} from 'react';
 import {Image, View, StatusBar,ActivityIndicator} from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
 import { config } from '../../servises/utils';
-import { Myimage } from '../../servises/constans/images';
+import { images } from '../../servises/constans/images';
 import { ROUTES } from '../../servises/routes';
 import LoginOrRegister from '../authtorisationScreen/loginOrRegsiter';
 
@@ -25,7 +25,7 @@ import LoginOrRegister from '../authtorisationScreen/loginOrRegsiter';
         style={{flex: 1}}
         start={{x: 1, y: 2}}
         end={{x: 1, y: 0}}>
-    {Myimage.airplane}
+    {images.splashlogo}
     <ActivityIndicator size="large" color={config.eminence} />
       </LinearGradient>
     );

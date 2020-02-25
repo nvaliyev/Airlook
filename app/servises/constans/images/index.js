@@ -2,14 +2,15 @@ import React from 'react'
 import {
 Image
 } from 'react-native';
+import { img } from '../../../assets/img';
 
 
-export const Myimage = {
-  airplane: (
-    <Image source={require('../../../assets/Icon.png')} style={{width: 150,resizeMode:'contain',alignSelf:'center',justifyContent:'center'}} />
+export const images = {
+  splashlogo: (
+    <Image source={img.splashlogo} style={{width: 150,resizeMode:'contain',alignSelf:'center',justifyContent:'center'}} />
   ),
-  icon:( 
-    <Image source={require('../../../assets/logo.png')} style={{width: 200, resizeMode:'contain', maxHeight:250}} />
+  logo:( 
+    <Image source={img.logo} style={{width: 200, resizeMode:'contain', maxHeight:250}} />
 
   )
 };

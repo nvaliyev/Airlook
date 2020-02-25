@@ -2,7 +2,7 @@ import React from 'react';
 import {View, TouchableOpacity, Dimensions, Text} from 'react-native';
 import {styles} from './style';
 import {ROUTES} from '../../servises/routes';
-import { Myimage } from '../../servises/constans/images';
+import { images } from '../../servises/constans/images';
 import { iSimpleLineIcons } from '../../servises/constans/Icons/SimpleLineIcons';
 import { iFontAwesome } from '../../servises/constans/Icons/FontAwesome';
 
@@ -10,7 +10,7 @@ export const DrawerContent = ({navigation}) => {
   return (
     <View style={styles.container}>
       <View style={styles.top}>
-{Myimage.icon}
+{images.logo}
       </View>
       <View style={styles.content}>
       <TouchableOpacity

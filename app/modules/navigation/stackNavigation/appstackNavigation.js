@@ -65,7 +65,7 @@ export const Appstack = createStackNavigator(
     },
     FlightScreen: {
       screen: DrawerMenu,
-      navigationOptions: ({navigation}: NavigationScreenProps) => ({
+      navigationOptions: ({navigation}) => ({
         headerLeft: () => <Navigationdraw navigation={navigation} />,
         ...NavigationOptions,
       }),

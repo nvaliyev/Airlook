@@ -6,13 +6,13 @@ import {
   TouchableOpacity
 } from 'react-native';
 import { styles } from './style';
-import {FlightsCard} from '../../components/Flights/index'
+import { FlightsCard } from '../../components/Flights/index'
 
-export default class FlightScreen extends  Component {
-  render() { 
+export default class FlightScreen extends Component {
+  render() {
     return (
-<View style={styles.container}>
-<FlightsCard/>
+      <View style={styles.container}>
+        <FlightsCard />
       </View>
     )
   }
