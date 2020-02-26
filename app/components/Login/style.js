@@ -1,7 +1,7 @@
 import {StyleSheet} from 'react-native';
-import { config } from '../../servises/utils';
+import  config  from '../../servises/utils';
 
-export const styles = StyleSheet.create({
+ const styles = StyleSheet.create({
     container: {
         flex: 1,
         flexDirection:'column',
@@ -26,3 +26,4 @@ borderColor:config.eminence,
 
 });
 
+export default styles

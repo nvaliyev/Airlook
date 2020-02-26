@@ -2,9 +2,9 @@ import React from 'react';
 import createAnimatedSwitchNavigator from 'react-navigation-animated-switch';
 import {createAppContainer} from 'react-navigation';
 import {Transition} from 'react-native-reanimated';
-import {ROUTES} from '../../servises/routes/';
-import {Appstack} from './stackNavigation/appstackNavigation';
-import {LaunchScreen} from '../../views/launchScreen';
+import ROUTES from '../../servises/routes/';
+import Appstack from './stackNavigation/appstackNavigation';
+import LaunchScreen from '../../views/launchScreen';
 
 const SwitchNavigator = createAppContainer(
   createAnimatedSwitchNavigator(

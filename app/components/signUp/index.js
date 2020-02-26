@@ -1,15 +1,22 @@
-import React, {Component, useState} from 'react';
-import {View, Text, TouchableOpacity, TextInput} from 'react-native';
-import {styles} from './style';
-import {MButton} from '../mButton';
-import {ROUTES} from '../../servises/routes';
-import {config} from '../../servises/utils';
-import { iFontAwesome } from '../../servises/constans/Icons/FontAwesome';
+import React, {useState} from 'react';
+import {View,TouchableOpacity, TextInput} from 'react-native';
+import styles from './style';
+import MButton from '../mButton';
+import ROUTES from '../../servises/routes';
+import config from '../../servises/utils';
+import iFontAwesome  from '../../servises/constans/Icons/FontAwesome';
+import AsyncStorage from '@react-native-community/async-storage';
 
-export const SignUp = ({navigation}) => {
+const SignUp = ({navigation}) => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [show,setshow] = useState(true)
+
+  const Register = async () => {
+      await AsyncStorage.setItem('username', username )     
+      await AsyncStorage.setItem('password', password )
+    navigation.navigate(ROUTES.LoginSreen)
+ }
 
   return (
     <View style={styles.container}>
@@ -32,9 +39,10 @@ export const SignUp = ({navigation}) => {
       </TouchableOpacity>
      <MButton
         text="SignUp"
-        onPress={() => navigation.navigate(ROUTES.FlightScreen)}
+        onPress={Register}
         backgroundColor={config.eminence}
       />
     </View>
   );
 };
+export default SignUp

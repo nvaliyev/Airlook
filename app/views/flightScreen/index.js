@@ -1,25 +1,18 @@
 
-import React, { Component } from 'react';
-import {
-  View,
-  Text,
-  TouchableOpacity
-} from 'react-native';
-import { styles } from './style';
-import { FlightsCard } from '../../components/Flights/index'
+import React from 'react';
+import {View} from 'react-native';
+import  styles  from './style';
+import  FlightsCard  from '../../components/Flights/index'
 
-export default class FlightScreen extends Component {
-  render() {
+const FlightScreen = () => {
     return (
       <View style={styles.container}>
         <FlightsCard />
       </View>
     )
-  }
 }
 
-
-
+export default FlightScreen
 
 
 

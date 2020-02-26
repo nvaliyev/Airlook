@@ -1,27 +1,19 @@
 
-import React, { Component } from 'react';
-import {
-  View,
-  Text,
-  TouchableOpacity
-} from 'react-native';
-import { styles } from './style';
-import { SignUp } from '../../../components/signUp';
+import React from 'react';
+import { View } from 'react-native';
+import styles  from './style';
+import SignUp  from '../../../components/signUp';
 
-
-export default class SignUpScreen extends  Component {
-
-  render() { 
+ const SignUpScreen = ({navigation}) => {
     return (
-
       <View style={styles.container}>
+<SignUp navigation={{navigation}}/>
+      </View>  
+      )}
       
-<SignUp navigation={this.props.navigation}/>
-      </View>
-    )
-  }
-}
-
+      
+      
+export default SignUpScreen
 
 
 

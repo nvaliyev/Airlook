@@ -1,12 +1,18 @@
 import React from 'react';
-import {View, TouchableOpacity, Dimensions, Text} from 'react-native';
-import {styles} from './style';
-import {ROUTES} from '../../servises/routes';
-import { images } from '../../servises/constans/images';
-import { iSimpleLineIcons } from '../../servises/constans/Icons/SimpleLineIcons';
-import { iFontAwesome } from '../../servises/constans/Icons/FontAwesome';
+import {View, TouchableOpacity, Text, } from 'react-native';
+import styles from './style';
+import ROUTES from '../../servises/routes';
+import images from '../../servises/constans/images';
+import iSimpleLineIcons  from '../../servises/constans/Icons/SimpleLineIcons';
+import iFontAwesome from '../../servises/constans/Icons/FontAwesome';
+import AsyncStorage from '@react-native-community/async-storage';
 
-export const DrawerContent = ({navigation}) => {
+ const DrawerContent = ({navigation}) => {
+const LogOut = async() => {
+  await AsyncStorage.clear()
+  navigation.navigate(ROUTES.LoginOrRegister)
+}
+
   return (
     <View style={styles.container}>
       <View style={styles.top}>
@@ -23,9 +29,7 @@ export const DrawerContent = ({navigation}) => {
       </TouchableOpacity>
 <View style={styles.logout}>
       <TouchableOpacity
-        onPress={() => {
-          navigation.navigate(ROUTES.LoginOrRegister);
-        }}
+        onPress={() => LogOut()}
         style={styles.btn}>
           {iSimpleLineIcons.logout}
         <Text style= {styles.text}>Log Out</Text>
@@ -37,3 +41,4 @@ export const DrawerContent = ({navigation}) => {
   
   );
 };
+export default DrawerContent

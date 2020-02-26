@@ -1,9 +1,10 @@
 import {StyleSheet} from 'react-native';
+import config from '../../../servises/utils';
 
-export const styles = StyleSheet.create({
+ const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: "#f7f9fc",
+        backgroundColor:config.lilac,
         justifyContent: 'flex-start',
         alignContent:'center',
         alignItems:'center',
@@ -11,4 +12,5 @@ export const styles = StyleSheet.create({
     },
    
 });
+export default styles
 

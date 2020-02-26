@@ -1,7 +1,7 @@
 import {StyleSheet} from 'react-native';
-import {config} from '../../servises/utils';
+import config from '../../servises/utils';
 
-export const styles = StyleSheet.create({
+ const styles = StyleSheet.create({
   container: {
     flex: 1,
     flexDirection: 'column',
@@ -12,7 +12,7 @@ export const styles = StyleSheet.create({
   },
   input: {
     height: 65,
-    backgroundColor: config.lilac,
+    backgroundColor:config.lilac,
     alignSelf: 'stretch',
     paddingHorizontal: 25,
     marginHorizontal: 25,
@@ -20,7 +20,8 @@ export const styles = StyleSheet.create({
     borderRadius: 5,
     elevation: 10,
     shadowColor: 'black',
-    borderColor: config.indigo,
+    borderColor:config.indigo,
     color: config.eminence,
   },
 });
+export default styles

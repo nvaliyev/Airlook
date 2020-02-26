@@ -1,7 +1,7 @@
 import {StyleSheet} from 'react-native';
-import { config } from '../../servises/utils';
+import config  from '../../servises/utils';
 
-export const styles = StyleSheet.create({
+ const styles = StyleSheet.create({
     button: {
 
     alignSelf:'stretch',
@@ -24,4 +24,4 @@ export const styles = StyleSheet.create({
 
     }
 });
-
+export default styles

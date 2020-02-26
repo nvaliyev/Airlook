@@ -1,11 +1,9 @@
 import React from 'react'
-import {
-Image
-} from 'react-native';
-import { img } from '../../../assets/img';
+import {Image} from 'react-native';
+import  img  from '../../../assets/img';
 
 
-export const images = {
+const images = {
   splashlogo: (
     <Image source={img.splashlogo} style={{width: 150,resizeMode:'contain',alignSelf:'center',justifyContent:'center'}} />
   ),
@@ -14,3 +12,4 @@ export const images = {
 
   )
 };
+export default images

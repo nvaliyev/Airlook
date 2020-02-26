@@ -9,10 +9,10 @@ const Utils = {
     lilac: '#F7F9FC',
   };
   
-  export const config = {
+ const config = {
     ...Utils,
     ...allcolor
   }
 
-
+  export default config
 

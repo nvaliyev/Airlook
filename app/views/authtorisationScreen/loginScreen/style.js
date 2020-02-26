@@ -1,11 +1,12 @@
 import {StyleSheet} from 'react-native';
+import config from '../../../servises/utils';
 
-export const styles = StyleSheet.create({
+ const styles = StyleSheet.create({
     container: {
         flex: 1,
         flexDirection:'column',
-        backgroundColor: "#f7f9fc",
+        backgroundColor: config.lilac,
         justifyContent: 'center'
     }
 });
-
+export default styles

@@ -1,4 +1,4 @@
-export const ROUTES = {
+const ROUTES = {
   LoginSreen: 'LoginScreen',
   SignUpScreen: 'SignUpScreen',
   FlightScreen: 'FlightScreen',
@@ -6,3 +6,5 @@ export const ROUTES = {
   SettingScreen: 'SettingScreen',
   LoginOrRegister: 'LoginOrRegister',
 };
+
+export default ROUTES
