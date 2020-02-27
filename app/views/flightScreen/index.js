@@ -4,10 +4,10 @@ import {View} from 'react-native';
 import  styles  from './style';
 import  FlightsCard  from '../../components/Flights/index'
 
-const FlightScreen = () => {
+const FlightScreen = ({navigation}) => {
     return (
       <View style={styles.container}>
-        <FlightsCard />
+        <FlightsCard  />
       </View>
     )
 }

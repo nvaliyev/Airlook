@@ -3,20 +3,20 @@ import LinearGradient from 'react-native-linear-gradient';
 import config from '../../../servises/utils';
 
 const NavigationOptions = {
-    headerBackground: () => Gradient,
-    headerStyle: {
-      height:60,
-      elevation:15,
-    },
-    headerTintColor:config.lilac,
-    headerTitleAlign: 'center',
-  };
+  headerBackground: () => Gradient,
+  headerStyle: {
+    height: 60,
+    elevation: 15,
+  },
+  headerTintColor: config.lilac,
+  headerTitleAlign: 'center',
+};
 const Gradient = (
   <LinearGradient
     colors={[config.indigo, config.eminence]}
-    style={{flex: 1 ,}}
+    style={{flex: 1}}
     start={{x: 0, y: 3}}
     end={{x: 1, y: 0}}
   />
 );
-export default NavigationOptions
+export default NavigationOptions;

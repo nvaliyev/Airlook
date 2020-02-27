@@ -7,4 +7,4 @@ const ROUTES = {
   LoginOrRegister: 'LoginOrRegister',
 };
 
-export default ROUTES
+export default ROUTES;
