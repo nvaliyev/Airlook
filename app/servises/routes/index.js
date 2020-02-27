@@ -5,6 +5,7 @@ const ROUTES = {
   LaunchScreen: 'LaunchScreen',
   SettingScreen: 'SettingScreen',
   LoginOrRegister: 'LoginOrRegister',
+  NewsScreen:'NewsScreen'
 };
 
 export default ROUTES;

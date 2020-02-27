@@ -6,9 +6,9 @@ import SignUp from '../../../components/signUp';
 const SignUpScreen = ({navigation}) => {
   return (
     <View style={styles.container}>
-      <SignUp navigation={{navigation}} />
+      <SignUp navigation={navigation} />
     </View>
-  );
-};
+  )
+}
 
 export default SignUpScreen;

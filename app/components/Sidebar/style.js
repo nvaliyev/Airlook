@@ -23,7 +23,6 @@ import config from '../../servises/utils';
     alignSelf: 'center',
   
   },
-  text: {fontSize: 18, marginHorizontal:30,},
 
   content: {
     flex: 1,
@@ -34,14 +33,7 @@ import config from '../../servises/utils';
     alignContent:'center',
     marginTop:20,
   },
-  btn: {
-    flexDirection: 'row',
-    marginHorizontal: 5,
-    height: 65,
-    padding:15,
-    justifyContent: 'flex-start',
-    borderBottomColor: config.eminence,
-  },
+
   logout:{
     flex:2,
   alignItems:'center',
