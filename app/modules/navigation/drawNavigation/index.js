@@ -1,34 +1,36 @@
 import React from 'react';
 import {View, TouchableOpacity, Dimensions} from 'react-native';
 import {createDrawerNavigator} from 'react-navigation-drawer';
-import FlightScreen  from '../../../views/flightScreen';
-import DrawerContent  from '../../../components/Sidebar';
-import iFontAwesome  from '../../../servises/constans/Icons/FontAwesome';
+import FlightScreen from '../../../views/flightScreen';
+import DrawerContent from '../../../components/Sidebar';
+import iFontAwesome from '../../../servises/constans/Icons/FontAwesome';
 
- const Navigationdraw = ({navigation}) => {
+const Navigationdraw = ({navigation}) => {
   return (
     <View style={{flexDirection: 'row', marginLeft: 15}}>
       <TouchableOpacity onPress={() => navigation.toggleDrawer()}>
-  {iFontAwesome.menu}   
-</TouchableOpacity> 
+        {iFontAwesome.menu}
+      </TouchableOpacity>
     </View>
   );
 };
 
-export const DrawerMenu = createDrawerNavigator(
+const DrawerMenu = createDrawerNavigator(
   {
     Flights: {
       screen: FlightScreen,
       navigationOptions: {
         drawerLabel: 'Flights',
-        
       },
     },
   },
 
-  {drawerWidth: Dimensions.get('window').width - 70,
-  contentComponent: ({navigation}) => <DrawerContent navigation={navigation} />
-},
+  {
+    drawerWidth: Dimensions.get('window').width - 70,
+    contentComponent: ({navigation}) => (
+      <DrawerContent navigation={navigation} />
+    ),
+  },
   {initialRouteName: 'Flights'},
 );
-export default Navigationdraw
+export {Navigationdraw, DrawerMenu};

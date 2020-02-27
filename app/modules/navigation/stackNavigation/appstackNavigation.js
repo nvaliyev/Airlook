@@ -6,7 +6,7 @@ import SignUpScreen from '../../../views/authtorisationScreen/signUpScreen';
 import ROUTES from '../../../servises/routes';
 import SettingScreen from '../../../views/settingScreen';
 import NavigationOptions from './style';
-import {DrawerMenu, Navigationdraw} from '../drawNavigation';
+import {DrawerMenu, Navigationdraw} from '../drawNavigation/index';
 
 const Appstack = createStackNavigator(
   {
