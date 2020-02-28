@@ -20,6 +20,7 @@ const SignUp = ({navigation}) => {
     } else {
       await AsyncStorage.setItem('username', username )     
       await AsyncStorage.setItem('password', password )
+      await AsyncStorage.setItem('LoggedIn','1')
     navigation.navigate(ROUTES.FlightScreen)
     }
  }

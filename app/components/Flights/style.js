@@ -8,12 +8,12 @@ import  config  from '../../servises/utils';
     shadowRadius:0.45,
     backgroundColor:'white',
     height:100,
-    alignSelf:'stretch',
     marginHorizontal:10,
     borderRadius:4,
     borderLeftWidth:5,
-    borderLeftColor:config.eminence
-
+    borderLeftColor:config.eminence,
+    alignSelf:'stretch',
+    marginTop:5
   },
 });
 

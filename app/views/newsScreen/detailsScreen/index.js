@@ -2,13 +2,12 @@ import React from 'react';
 import {View, Text} from 'react-native';
 import styles from './style';
 
-const NewsScreen = () => {
+const NewsDetailScreen = () => {
   return (
     <View style={styles.container}>
-<Text>  NewsScreen  </Text>
-
-</View>
+<Text> NewsDetailScreen</Text>
+    </View>
   );
 };
 
-export default NewsScreen;
+export default NewsDetailScreen;

@@ -7,7 +7,9 @@ import ROUTES from '../../../servises/routes';
 import SettingScreen from '../../../views/settingScreen';
 import NavigationOptions from './style';
 import {DrawerMenu, Navigationdraw} from '../drawNavigation/';
-
+import NewsScreen from '../../../views/newsScreen';
+import NewsDetailScreen from '../../../views/newsScreen/detailsScreen';
+import FlightDetailScreen from '../../../views/flightScreen/detailscreen/index'
 const Appstack = createStackNavigator(
   {
     LoginOrRegister: {
@@ -37,11 +39,32 @@ const Appstack = createStackNavigator(
       navigationOptions: ({navigation}) => ({
         headerLeft: () => <Navigationdraw navigation={navigation} />,
         ...NavigationOptions,
-      }),
+      })
+    },
+      FlightDetailScreen: {
+        screen:FlightDetailScreen,
+        navigationOptions: () => ({
+          title: ROUTES.FlightDetailScreen,
+          ...NavigationOptions,
+        }),
     },
     SettingScreen: {
       screen: SettingScreen,
       title: ROUTES.SettingScreen,
+      navigationOptions: () => ({
+        ...NavigationOptions,
+      }),
+    },
+    NewsScreen: {
+      screen: NewsScreen,
+      title: ROUTES.NewsScreen,
+      navigationOptions: () => ({
+        ...NavigationOptions,
+      }),
+    },
+    NewsDetailScreen: {
+      screen: NewsDetailScreen,
+      title: ROUTES.NewsDetailScreen,
       navigationOptions: () => ({
         ...NavigationOptions,
       }),

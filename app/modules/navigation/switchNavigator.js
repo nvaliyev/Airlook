@@ -16,8 +16,8 @@ const SwitchNavigator = createAppContainer(
       initialRouteName: ROUTES.LaunchScreen,
       transition: (
         <Transition.Together>
-          <Transition.Out type="fade" durationMs={0} />
-          <Transition.In type="slide-right" durationMs={300} />
+          <Transition.Out type="fade" durationMs={650} />
+          <Transition.In type='scale' durationMs={600} />
         </Transition.Together>
       ),
     },
