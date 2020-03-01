@@ -5,15 +5,14 @@ import config from '../../servises/utils';
   container: {
     flex: 1,
     backgroundColor: config.lilac,
-    paddingTop:5,
+    
   },
   top: {
     width: '100%',
-    height: '10%',
+    maxHeight:70,
     backgroundColor: config.lilac,
     justifyContent: 'center',
     alignItems: 'center',
-   
   },
   logo: {
     alignContent: 'center',

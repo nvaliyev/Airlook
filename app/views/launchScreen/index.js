@@ -1,10 +1,11 @@
 import React, {useEffect} from 'react';
 import AsyncStorage from '@react-native-community/async-storage';
-import {ActivityIndicator} from 'react-native';
+import {ActivityIndicator, View} from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
 import config from '../../servises/utils';
 import images from '../../servises/constans/images';
 import ROUTES from '../../servises/routes';
+import styles from './style';
 
 const LaunchScreen = ({navigation}) => {
   const IsLoggedin = async () => {
@@ -24,11 +25,11 @@ const LaunchScreen = ({navigation}) => {
   return (
     <LinearGradient
       colors={[config.eminence, config.indigo]}
-      style={{flex: 1}}
+      style={styles.View}
       start={{x: 1, y: 2}}
       end={{x: 1, y: 0}}>
       {images.splashlogo}
-      <ActivityIndicator size="large" color={config.eminence} />
+      <ActivityIndicator size='large' color={config.eminence} style={styles.indicator} />
     </LinearGradient>
   );
 };

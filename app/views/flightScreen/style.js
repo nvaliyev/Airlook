@@ -7,42 +7,36 @@ import config  from '../../servises/utils';
         backgroundColor: config.lilac,
         justifyContent: 'center',
         alignContent:'center',
-        alignItems:'center'
+        alignItems:'center',
+        flexDirection:'column'
     },
     filters:{
-        flex:2,
-        backgroundColor:'orange',
-        flexDirection:'row',  
-        alignSelf:'stretch',
-        justifyContent:'center',
-        flexWrap:'wrap'
-
+        flex:1,
+        backgroundColor:'transparent',
+        minHeight:25,
+        margin:5,
+        justifyContent:'center'
+        
     },
-    filterButtons:{
-     height:30,
-     justifyContent:'center',
-     padding:15
-    },
+   
     flightlist:{
-        flex:10,
-        backgroundColor:'white',
+        flex:11,
+        backgroundColor:'transparent',
         alignItems:'center',
         justifyContent:'flex-start',
         alignSelf:'stretch'
        },
     footer:{
-    height:50,
+    height:40,
+    minHeight:40,
     flexDirection:'row',
     justifyContent:'center',
     alignItems:'center',
-    alignSelf:'stretch',
+    alignSelf:'stretch', 
+    opacity:0.95
     },
-    footerButtons:{
-       width:'50%',
-        height:'100%',
-        alignSelf:'center'
-    
-    }
+
+
 
 });
 export default styles

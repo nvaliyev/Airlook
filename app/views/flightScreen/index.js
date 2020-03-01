@@ -5,6 +5,8 @@ import FlightsCard from '../../components/Flights/index';
 import FilterButtons from '../../components/FilterButtons';
 import LinearGradient from 'react-native-linear-gradient';
 import config from '../../servises/utils';
+import FooterButtons from '../../components/FooterButtons';
+import iEntypo from '../../servises/constans/Icons/Entypo';
 
 const FlightScreen = ({navigation}) => {
 
@@ -15,7 +17,9 @@ const FlightScreen = ({navigation}) => {
         <FilterButtons/>
       </View>
       <View style={styles.flightlist}>
-      <FlightsCard  navigation={navigation}/>
+      <FlightsCard  navigation={navigation} time={'14:03'} city={'Kiev'} info={'Boarding Completed'} flight={'LO 752(D)'}/>
+      <FlightsCard  navigation={navigation} time={'00:10'} city={'Baku'} info={'Take Off at 00:25'} flight={'PQ 7001(F)'}/>
+
       </View>
       <LinearGradient
     colors={[config.indigo, config.eminence]}
@@ -23,14 +27,9 @@ const FlightScreen = ({navigation}) => {
     start={{x: 0, y: 1}}
     end={{x: 1, y: 0}}
   >
-<TouchableOpacity style={styles.footerButtons}>
-  <Text>Departure</Text>
-  </TouchableOpacity>
-  <TouchableOpacity style={styles.footerButtons}>
-  <Text> Arrival</Text>
-  </TouchableOpacity> 
-</LinearGradient>
-
+    <FooterButtons  text={'Departure'}  ico={iEntypo.aircraftof} />
+<FooterButtons  text={'Arrival'} ico={iEntypo.aircraftland}/>
+    </LinearGradient>
 </View>
   )
 }

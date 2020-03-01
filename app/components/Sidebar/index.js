@@ -22,6 +22,7 @@ const LogOut = async() => {
       <View style={styles.content}>
       <DrawerButtons onPress={()=>navigation.navigate(ROUTES.FlightScreen)} ico={iFontAwesome.calendar} text='Flights' />
       <DrawerButtons onPress={()=>navigation.navigate(ROUTES.SettingScreen)} ico={iFontAwesome.settings} text='Settings'/>
+      <DrawerButtons onPress={()=>navigation.navigate(ROUTES.NewsScreen)} ico={iFontAwesome.newspaper} text='News'/>
 <View style={styles.logout}>
       <DrawerButtons onPress={() => LogOut()} ico={iSimpleLineIcons.logout} text='Log Out'/>
       </View>

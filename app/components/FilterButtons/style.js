@@ -5,23 +5,36 @@ import config  from '../../servises/utils';
      container:{
       flex:1,
       alignItems:'center',
-      height:40,
+      maxHeight:30,
+      flexDirection:'row',
+      alignSelf:'center',
       justifyContent:'center',
+      backgroundColor:'transparent',
+      opacity:0.9,
+      borderWidth:0,
+      padding:1,
      },
      selectedText:{
-    backgroundColor:config.eminence
+    backgroundColor:config.eminence,
+    elevation:3,
      },
      innerBorder:{
-        width:3,
+        width:0,
         color:config.lilac,
+        backgroundColor:config.lilac
+        
      },
     button: {
-        backgroundColor:config.lilac,borderRadius:2,borderWidth:2,borderColor:config.eminence
-},
+        backgroundColor:config.lilac,
+        borderRadius:4,
+        borderWidth:1,
+        borderColor:config.eminence,
+        marginHorizontal:2,        
+    },
     text: 
         {
          color:config.eminence,
-            fontSize:15
+            fontSize:12
         }
 
     
