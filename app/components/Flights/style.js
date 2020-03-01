@@ -13,7 +13,7 @@ import  config  from '../../servises/utils';
     borderLeftWidth:4,
     borderLeftColor:config.eminence,
     alignSelf:'stretch',
-    marginTop:5,
+    marginTop:10,
   },
 
   time:{
