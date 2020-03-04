@@ -1,10 +1,10 @@
 import React from 'react';
-import {View, TouchableOpacity, Dimensions} from 'react-native';
+import {View, TouchableOpacity, Dimensions, Settings} from 'react-native';
 import {createDrawerNavigator} from 'react-navigation-drawer';
-import FlightScreen from '../../../views/flightScreen';
-import DrawerContent from '../../../components/Sidebar';
-import iFontAwesome from '../../../servises/constans/Icons/FontAwesome';
-
+import DrawerContent from '../../../components/sidebar';
+import iFontAwesome from '../../../servises/constans/Icons/fontAwesome';
+import Mytabs from '../tabNavigation';
+import DrawerStack from '../stackNavigation/drawerStackNavigation';
 const Navigationdraw = ({navigation}) => {
   return (
     <View style={{flexDirection: 'row', marginLeft: 15}}>
@@ -14,23 +14,16 @@ const Navigationdraw = ({navigation}) => {
     </View>
   );
 };
-
 const DrawerMenu = createDrawerNavigator(
   {
-    Flights: {
-      screen: FlightScreen,
-      navigationOptions: {
-        drawerLabel: 'Flights',
-      },
-    },
+    Tabs:Mytabs,
+    DrawerStack:DrawerStack,
   },
-
   {
     drawerWidth: Dimensions.get('window').width - 70,
     contentComponent: ({navigation}) => (
       <DrawerContent navigation={navigation} />
     ),
   },
-  {initialRouteName: 'Flights'},
 );
 export {Navigationdraw, DrawerMenu};

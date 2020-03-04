@@ -1,30 +1,25 @@
-import React, {useState} from 'react';
-import {View, TextInput} from 'react-native';
+import React, { useState } from 'react';
+import { View, TextInput } from 'react-native';
 import styles from './style';
 import MButton from '../mButton';
 import ROUTES from '../../servises/routes';
 import config from '../../servises/utils';
 import AsyncStorage from '@react-native-community/async-storage';
-
-const Login = ({navigation}) => {
+const Login = ({ navigation }) => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
-  const User = {username: 'a', password: 'a'};
-
-
-
+  const User = { username: 'a', password: 'a' };
 
   const CheckLogin = async () => {
-    const NewUser = {username:await AsyncStorage.getItem('username'), password:await AsyncStorage.getItem('password')}
-    if (User.username === username && User.password === password||NewUser.username === username && NewUser.password === password) {
-      await AsyncStorage.setItem('LoggedIn','1')
-      navigation.navigate(ROUTES.FlightScreen)
+    const NewUser = { username: await AsyncStorage.getItem('username'), password: await AsyncStorage.getItem('password') }
+    if (User.username === username && User.password === password || NewUser.username === username && NewUser.password === password) {
+      await AsyncStorage.setItem('LoggedIn', '1')
+      navigation.navigate('app')
     }
     else {
       alert('Username or Password is incorrect')
     }
   }
-
 
   return (
     <View style={styles.container}>
@@ -34,7 +29,6 @@ const Login = ({navigation}) => {
         onChangeText={setUsername}
         value={username}
       />
-
       <TextInput
         secureTextEntry={true}
         style={styles.input}
@@ -45,7 +39,8 @@ const Login = ({navigation}) => {
       <MButton
         backgroundColor={config.indigo}
         text="Login"
-        onPress={CheckLogin}
+        onPress={()=>navigation.navigate('app')
+      }
       />
     </View>
   );

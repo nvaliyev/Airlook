@@ -4,15 +4,15 @@ import {ActivityIndicator, View} from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
 import config from '../../servises/utils';
 import images from '../../servises/constans/images';
-import ROUTES from '../../servises/routes';
 import styles from './style';
 
 const LaunchScreen = ({navigation}) => {
   const IsLoggedin = async () => {
     const islogged = await AsyncStorage.getItem('LoggedIn');
     navigation.navigate(
-      islogged !== '1' ? ROUTES.LoginOrRegister : ROUTES.FlightScreen,
+      islogged !== '1' ? 'auth' : 'app',
     );
+
   };
   useEffect(() => {
     const timer = setTimeout(() => {

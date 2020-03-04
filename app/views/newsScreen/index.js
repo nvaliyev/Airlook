@@ -6,9 +6,7 @@ const NewsScreen = () => {
   return (
     <View style={styles.container}>
 <Text>  NewsScreen  </Text>
-
 </View>
   );
 };
-
 export default NewsScreen;

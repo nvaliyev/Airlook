@@ -4,6 +4,5 @@ import { StyleSheet } from 'react-native';
     container: {
         flex: 1,
     }
-
 })
 export default styles

@@ -3,17 +3,18 @@ import createAnimatedSwitchNavigator from 'react-navigation-animated-switch';
 import {createAppContainer} from 'react-navigation';
 import {Transition} from 'react-native-reanimated';
 import ROUTES from '../../servises/routes/';
-import Appstack from './stackNavigation/appstackNavigation';
+import Appstack from './stackNavigation/appstacknavigator';
+import Authstack from './stackNavigation/authStackNavigation';
 import LaunchScreen from '../../views/launchScreen';
-
 const SwitchNavigator = createAppContainer(
   createAnimatedSwitchNavigator(
     {
-      LaunchScreen,
-      Appstack,
+      loading:LaunchScreen,
+      app:Appstack,
+      auth:Authstack,
     },
     {
-      initialRouteName: ROUTES.LaunchScreen,
+      initialRouteName: 'loading',
       transition: (
         <Transition.Together>
           <Transition.Out type="fade" durationMs={650} />

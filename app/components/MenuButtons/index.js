@@ -1,18 +1,15 @@
 import React from 'react';
-import {TouchableOpacity, Text, View} from 'react-native';
+import { TouchableOpacity, Text,} from 'react-native';
 import styles from './style';
 
-
-
-const DrawerButtons = ({onPress,ico,text}) =>{
+const DrawerButtons = ({ onPress, ico, text }) => {
   return (
-<TouchableOpacity
- onPress={onPress}
-  style={styles.btn}>
-{ico}
-<Text style={styles.text}>{text}</Text>
-</TouchableOpacity>
-
+    <TouchableOpacity
+      onPress={onPress}
+      style={styles.btn}>
+      {ico}
+      <Text style={styles.text}>{text}</Text>
+    </TouchableOpacity>
   )
 }
-export default DrawerButtons
+export default DrawerButtons;

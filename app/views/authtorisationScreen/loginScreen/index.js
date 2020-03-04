@@ -1,7 +1,7 @@
 import React from 'react';
 import {View} from 'react-native';
 import styles from './style';
-import Login from '../../../components/Login';
+import Login from '../../../components/login';
 
 const LoginScreen = ({navigation}) => {
   return (

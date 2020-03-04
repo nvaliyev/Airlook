@@ -8,6 +8,10 @@ const ROUTES = {
   LoginOrRegister: 'LoginOrRegister',
   NewsScreen:'NewsScreen',
   NewsDetailScreen:'NewsDetailScreen',
+  ArrivalScreen:'ArrivalScreen',
+  DepartureScreen:'DepartureScreen',
+  ArrivalDetailScreen:'ArrivalDetailScreen',
+  DepartureDetailScreen:'DepartureDetailScreen'
 
 };
 

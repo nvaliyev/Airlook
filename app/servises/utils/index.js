@@ -1,5 +1,8 @@
 const Utils = {
     width: 100,
+    TextSize_Low:12,
+    TextSize_Middle:15
+
 }
 
 
@@ -14,5 +17,5 @@ const Utils = {
     ...allcolor
   }
 
-  export default config
+  export default config;
 
