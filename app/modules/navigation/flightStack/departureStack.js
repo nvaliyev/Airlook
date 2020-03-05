@@ -1,8 +1,8 @@
 import React from 'react';
 import { createStackNavigator } from 'react-navigation-stack';
 import ROUTES from '../../../servises/routes';
-import NavigationOptions from './style';
-import { Navigationdraw } from '../drawNavigation/';
+import NavigationOptions from '../stackNavigation/style';
+import { Navigationdraw } from '../drawNavigation';
 import DepartureScreen from '../../../views/departureScreen';
 import DepartureDetailScreen from '../../../views/departureScreen/detailScreen';
 

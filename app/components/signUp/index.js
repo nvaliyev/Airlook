@@ -19,7 +19,7 @@ const SignUp = ({ navigation }) => {
       await AsyncStorage.setItem('username', username)
       await AsyncStorage.setItem('password', password)
       await AsyncStorage.setItem('LoggedIn', '1')
-      navigation.navigate('app')
+      navigation.navigate('Main')
     }
   }
 

@@ -14,7 +14,7 @@ const Login = ({ navigation }) => {
     const NewUser = { username: await AsyncStorage.getItem('username'), password: await AsyncStorage.getItem('password') }
     if (User.username === username && User.password === password || NewUser.username === username && NewUser.password === password) {
       await AsyncStorage.setItem('LoggedIn', '1')
-      navigation.navigate('app')
+      navigation.navigate('Main')
     }
     else {
       alert('Username or Password is incorrect')
@@ -39,8 +39,7 @@ const Login = ({ navigation }) => {
       <MButton
         backgroundColor={config.indigo}
         text="Login"
-        onPress={()=>navigation.navigate('app')
-      }
+        onPress={CheckLogin}
       />
     </View>
   );

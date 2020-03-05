@@ -5,7 +5,9 @@ import LoginScreen from '../../../views/authtorisationScreen/loginScreen';
 import SignUpScreen from '../../../views/authtorisationScreen/signUpScreen';
 import ROUTES from '../../../servises/routes';
 import NavigationOptions from './style';
-
+import { DrawerMenu } from '../drawNavigation';
+import AppFlow from './appFlow';
+import Mytabs from '../tabNavigation';
 
 const Authstack = createStackNavigator(
   {
@@ -19,7 +21,7 @@ const Authstack = createStackNavigator(
     },
     LoginScreen: {
       screen: LoginScreen,
-      navigationOptions: () => ({
+      navigationOptions: ({navigation}) => ({
         title: ROUTES.LoginSreen,
         ...NavigationOptions,
       }),
@@ -31,6 +33,12 @@ const Authstack = createStackNavigator(
         ...NavigationOptions,
       }),
     },
+    Main: {
+      screen: Mytabs,
+      navigationOptions:{
+          headerShown:false
+      }}
+    
   },
   {
     initialRouteName: ROUTES.LoginOrRegister,

@@ -4,7 +4,6 @@ import {createDrawerNavigator} from 'react-navigation-drawer';
 import DrawerContent from '../../../components/sidebar';
 import iFontAwesome from '../../../servises/constans/Icons/fontAwesome';
 import Mytabs from '../tabNavigation';
-import DrawerStack from '../stackNavigation/drawerStackNavigation';
 const Navigationdraw = ({navigation}) => {
   return (
     <View style={{flexDirection: 'row', marginLeft: 15}}>
@@ -17,7 +16,6 @@ const Navigationdraw = ({navigation}) => {
 const DrawerMenu = createDrawerNavigator(
   {
     Tabs:Mytabs,
-    DrawerStack:DrawerStack,
   },
   {
     drawerWidth: Dimensions.get('window').width - 70,
