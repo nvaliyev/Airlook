@@ -2,8 +2,8 @@ import React from 'react';
 import {View, TouchableOpacity, Dimensions} from 'react-native';
 import {createDrawerNavigator} from 'react-navigation-drawer';
 import FlightScreen from '../../../views/flightScreen';
-import DrawerContent from '../../../components/Sidebar';
-import iFontAwesome from '../../../servises/constans/Icons/FontAwesome';
+import DrawerContent from '../../../components/sidebar';
+import iFontAwesome from '../../../servises/constans/Icons/fontAwesome';
 
 const Navigationdraw = ({navigation}) => {
   return (

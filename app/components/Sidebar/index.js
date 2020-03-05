@@ -3,10 +3,10 @@ import {View, TouchableOpacity, Text, } from 'react-native';
 import styles from './style';
 import ROUTES from '../../servises/routes';
 import images from '../../servises/constans/images';
-import iSimpleLineIcons  from '../../servises/constans/Icons/SimpleLineIcons';
-import iFontAwesome from '../../servises/constans/Icons/FontAwesome';
+import iSimpleLineIcons  from '../../servises/constans/Icons/simpleLineIcons';
+import iFontAwesome from '../../servises/constans/Icons/fontAwesome';
 import AsyncStorage from '@react-native-community/async-storage';
-import DrawerButtons from '../MenuButtons';
+import DrawerButtons from '../menuButtons';
 
 
 const DrawerContent = ({navigation}) => {

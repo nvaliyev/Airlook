@@ -1,12 +1,12 @@
 import React from 'react';
 import {View, TouchableOpacity, Text, ScrollView} from 'react-native';
 import styles from './style';
-import FlightsCard from '../../components/Flights/index';
-import FilterButtons from '../../components/FilterButtons';
+import FlightsCard from '../../components/flights/index';
+import FilterButtons from '../../components/filterButtons';
 import LinearGradient from 'react-native-linear-gradient';
 import config from '../../servises/utils';
-import FooterButtons from '../../components/FooterButtons';
-import iEntypo from '../../servises/constans/Icons/Entypo';
+import FooterButtons from '../../components/footerButtons';
+import iEntypo from '../../servises/constans/Icons/entypo';
 
 const FlightScreen = ({navigation}) => {
 

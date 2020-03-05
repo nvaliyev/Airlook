@@ -9,7 +9,8 @@ import NavigationOptions from './style';
 import {DrawerMenu, Navigationdraw} from '../drawNavigation/';
 import NewsScreen from '../../../views/newsScreen';
 import NewsDetailScreen from '../../../views/newsScreen/detailsScreen';
-import FlightDetailScreen from '../../../views/flightScreen/detailscreen/index'
+import FlightDetailScreen from '../../../views/flightScreen/detailscreen/index';
+
 const Appstack = createStackNavigator(
   {
     LoginOrRegister: {

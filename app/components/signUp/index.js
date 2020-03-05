@@ -4,7 +4,7 @@ import styles from './style';
 import MButton from '../mButton';
 import ROUTES from '../../servises/routes';
 import config from '../../servises/utils';
-import iFontAwesome  from '../../servises/constans/Icons/FontAwesome';
+import iFontAwesome  from '../../servises/constans/Icons/fontAwesome';
 import AsyncStorage from '@react-native-community/async-storage';
 
 const SignUp = ({navigation}) => {
