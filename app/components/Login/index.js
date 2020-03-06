@@ -5,16 +5,16 @@ import MButton from '../mButton';
 import ROUTES from '../../servises/routes';
 import config from '../../servises/utils';
 import AsyncStorage from '@react-native-community/async-storage';
+import { withNavigation } from 'react-navigation';
 const Login = ({ navigation }) => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const User = { username: 'a', password: 'a' };
-
   const CheckLogin = async () => {
     const NewUser = { username: await AsyncStorage.getItem('username'), password: await AsyncStorage.getItem('password') }
     if (User.username === username && User.password === password || NewUser.username === username && NewUser.password === password) {
       await AsyncStorage.setItem('LoggedIn', '1')
-      navigation.navigate('Main')
+      navigation.navigate('Tabs')
     }
     else {
       alert('Username or Password is incorrect')

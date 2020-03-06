@@ -6,13 +6,13 @@ import images from '../../servises/constans/images';
 import iSimpleLineIcons from '../../servises/constans/Icons/simpleLineIcons';
 import iFontAwesome from '../../servises/constans/Icons/fontAwesome';
 import AsyncStorage from '@react-native-community/async-storage';
-import DrawerButtons from '../menuButtons';
-
+import DrawerButtons from '../MenuButtons';
+import { withNavigation } from 'react-navigation';
 
 const DrawerContent = ({ navigation }) => {
   const LogOut = async () => {
     await AsyncStorage.clear()
-    navigation.navigate('auth')
+    navigation.navigate("auth")
   }
   return (
     <View style={styles.container}>

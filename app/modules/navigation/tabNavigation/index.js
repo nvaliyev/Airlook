@@ -1,14 +1,14 @@
 import React from 'react'
 import { createBottomTabNavigator } from 'react-navigation-tabs';
-import DepartureStack from '../flightStack/departureStack';
-import ArrivalStack from '../flightStack/arrivalStack';
+import DepartureScreen from '../../../views/departureScreen';
+import ArrivalScreen from '../../../views/arrivalScreen';
 
 const Mytabs = createBottomTabNavigator(
     {
       Departure: {
-         screen: DepartureStack },
+         screen: DepartureScreen},
       Arrival: { 
-        screen: ArrivalStack },
+        screen: ArrivalScreen},
     },
    
     {

@@ -1,6 +1,6 @@
 
 import React from 'react';
-import SettingsContent from '../../components/settingsContent';
+import SettingsContent from '../../components/SettingsContent';
 
 const SettingScreen = () => {
   return (

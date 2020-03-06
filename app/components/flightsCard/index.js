@@ -6,8 +6,7 @@ import images from '../../servises/constans/images';
 
 const FlightsCard = ({ navigation, city, time, info, flight }) => {
 
-  const toDetail = () => navigation.navigate('Detail')
-
+  const toDetail = () => navigation.navigate('FlightDetail')
   return (
     <TouchableOpacity onPress={toDetail} style={styles.content} >
       <View style={styles.top}>

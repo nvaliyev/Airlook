@@ -1,6 +1,4 @@
 import {StyleSheet} from 'react-native';
-import config from '../../../servises/utils';
-import SettingsContent from '../../../components/settingsContent';
 
  const styles = StyleSheet.create({
     container: {

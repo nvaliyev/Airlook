@@ -1,9 +1,10 @@
 import React from 'react';
 import {View, TouchableOpacity, Dimensions, Settings} from 'react-native';
 import {createDrawerNavigator} from 'react-navigation-drawer';
-import DrawerContent from '../../../components/sidebar';
+import DrawerContent from '../../../components/Sidebar';
 import iFontAwesome from '../../../servises/constans/Icons/fontAwesome';
-import Mytabs from '../tabNavigation';
+import AppFlow from '../stackNavigation/appFlow';
+
 const Navigationdraw = ({navigation}) => {
   return (
     <View style={{flexDirection: 'row', marginLeft: 15}}>
@@ -15,7 +16,7 @@ const Navigationdraw = ({navigation}) => {
 };
 const DrawerMenu = createDrawerNavigator(
   {
-    Tabs:Mytabs,
+    Home:AppFlow,
   },
   {
     drawerWidth: Dimensions.get('window').width - 70,

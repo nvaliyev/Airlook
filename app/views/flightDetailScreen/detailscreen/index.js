@@ -3,6 +3,7 @@ import { View, Text } from 'react-native';
 import styles from './style';
 import images from '../../../servises/constans/images';
 import config from '../../../servises/utils';
+
 const FlightDetailScreen = () => {
   return (
     <View style={styles.container} >
