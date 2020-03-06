@@ -2,7 +2,7 @@ import React from 'react';
 import {View,ScrollView} from 'react-native';
 import styles from './style';
 import FlightsCard from '../../components/flightsCard/index';
-import FilterButtons from '../../components/FilterButtons';
+import FilterButtons from '../../components/filterButtons';
 
 const ArrivalScreen = ({navigation}) => {
   return (

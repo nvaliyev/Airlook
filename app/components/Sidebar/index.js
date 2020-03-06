@@ -6,7 +6,7 @@ import images from '../../servises/constans/images';
 import iSimpleLineIcons from '../../servises/constans/Icons/simpleLineIcons';
 import iFontAwesome from '../../servises/constans/Icons/fontAwesome';
 import AsyncStorage from '@react-native-community/async-storage';
-import DrawerButtons from '../MenuButtons';
+import DrawerButtons from '../menuButtons';
 import { withNavigation } from 'react-navigation';
 
 const DrawerContent = ({ navigation }) => {

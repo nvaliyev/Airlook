@@ -12,6 +12,7 @@ const Mytabs = createBottomTabNavigator(
     },
    
     {
+      initialRouteName:'Departure',
       tabBarPosition: 'bottom',
       swipeEnabled: true,
       animationEnabled: true,
@@ -31,8 +32,6 @@ const Mytabs = createBottomTabNavigator(
       
       },
     },
-    {
-      initialRouteName:'Departure'
-    },
+
   );
   export default Mytabs;

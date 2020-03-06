@@ -5,12 +5,13 @@ import LinearGradient from 'react-native-linear-gradient';
 import config from '../../servises/utils';
 import images from '../../servises/constans/images';
 import styles from './style';
+import ROUTES from '../../servises/routes';
 
 const LaunchScreen = ({navigation}) => {
   const IsLoggedin = async () => {
     const islogged = await AsyncStorage.getItem('LoggedIn');
     navigation.navigate(
-      islogged !== '1' ? 'auth' : 'app',
+      islogged !== '1' ? ROUTES.Auth : ROUTES.Main,
     );
 
   };

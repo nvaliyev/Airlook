@@ -12,31 +12,8 @@ import FlightDetailScreen from '../../../views/flightDetailScreen';
 
 
 
-
-
-
-const AppFlow = createStackNavigator(
+const NewsStack = createStackNavigator(
   {
-    Tabs: {
-      screen: Mytabs,
-      navigationOptions: ({ navigation }) => ({
-        headerLeft: () => <Navigationdraw navigation={navigation} />,
-        ...NavigationOptions,
-      }),
-    },
-    FlightDetail: {
-      screen: FlightDetailScreen,
-      navigationOptions: () => ({
-        ...NavigationOptions,
-      }),
-    },
-    SettingScreen: {
-      screen: SettingScreen,
-      title: ROUTES.SettingScreen,
-      navigationOptions: () => ({
-        ...NavigationOptions,
-      }),
-    },
     NewsScreen: {
       screen: NewsScreen,
       title: ROUTES.NewsScreen,
@@ -54,7 +31,7 @@ const AppFlow = createStackNavigator(
   },
   {
     mode: 'modal',
-    initialRouteName: 'Tabs',
+    initialRouteName: 'NewsScreen',
   },
 );
 

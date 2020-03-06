@@ -1,9 +1,8 @@
 const ROUTES = {
   LoginSreen: 'LoginScreen',
   SignUpScreen: 'SignUpScreen',
-  FlightScreen: 'FlightScreen',
   FlightDetailScreen:'FlightDetailScreen',
-  LaunchScreen: 'LaunchScreen',
+  Loading: 'Loading',
   SettingScreen: 'SettingScreen',
   LoginOrRegister: 'LoginOrRegister',
   NewsScreen:'NewsScreen',
@@ -11,7 +10,8 @@ const ROUTES = {
   ArrivalScreen:'ArrivalScreen',
   DepartureScreen:'DepartureScreen',
   ArrivalDetailScreen:'ArrivalDetailScreen',
-  DepartureDetailScreen:'DepartureDetailScreen'
+  Main:'App',
+  Auth:'Auth',
 
 };
 
