@@ -1,13 +1,12 @@
 import React, { useState } from 'react';
 import { View, TouchableOpacity, TextInput, Alert, } from 'react-native';
 import styles from './style';
-import MButton from '../mButton';
-import ROUTES from '../../servises/routes';
 import config from '../../servises/utils';
 import iFontAwesome from '../../servises/constans/Icons/fontAwesome';
 import AsyncStorage from '@react-native-community/async-storage';
-
-const SignUp = ({ navigation }) => {
+import ClickButton from '../clickButton';
+import ROUTES from '../../servises/routes';
+const SignUp = ({navigation}) => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [show, setshow] = useState(true);
@@ -19,7 +18,7 @@ const SignUp = ({ navigation }) => {
       await AsyncStorage.setItem('username', username)
       await AsyncStorage.setItem('password', password)
       await AsyncStorage.setItem('LoggedIn', '1')
-      navigation.navigate('Main')
+      navigation.navigate(ROUTES.Main)
     }
   }
 
@@ -41,7 +40,7 @@ const SignUp = ({ navigation }) => {
       <TouchableOpacity style={styles.b}>
         {iFontAwesome.eye}
       </TouchableOpacity>
-      <MButton
+      <ClickButton
         text="SignUp"
         onPress={Register}
         backgroundColor={config.eminence}

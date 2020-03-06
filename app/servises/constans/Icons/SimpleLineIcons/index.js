@@ -4,6 +4,7 @@ import config  from '../../../utils';
 
  const iSimpleLineIcons = {
 logout:(<Icon name='logout' size = {25} color={config.eminence}/>),
+left:(<Icon name='arrow-left' size = {25} color={config.eminence}/>)
 
 }
 

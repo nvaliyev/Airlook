@@ -5,7 +5,7 @@ import LoginScreen from '../../../views/authtorisationScreen/loginScreen';
 import SignUpScreen from '../../../views/authtorisationScreen/signUpScreen';
 import ROUTES from '../../../servises/routes';
 import NavigationOptions from './style';
-
+import GoBack from '../../../components/goBackButton';
 
 const Authstack = createStackNavigator(
   {
@@ -21,13 +21,15 @@ const Authstack = createStackNavigator(
       screen: LoginScreen,
       navigationOptions: ({navigation}) => ({
         title: ROUTES.LoginSreen,
+        headerLeft:()=> <GoBack navigation={navigation}/>,
         ...NavigationOptions,
       }),
     },
     SignUpScreen: {
       screen: SignUpScreen,
-      navigationOptions: () => ({
+      navigationOptions: ({navigation}) => ({
         title: ROUTES.SignUpScreen,
+        headerLeft:()=> <GoBack navigation={navigation}/>,
         ...NavigationOptions,
       }),
     },

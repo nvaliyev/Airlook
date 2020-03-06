@@ -2,30 +2,26 @@ import React from 'react';
 import { createStackNavigator } from 'react-navigation-stack';
 import ROUTES from '../../../servises/routes';
 import NavigationOptions from './style';
-import { Navigationdraw } from '../drawNavigation/';
-import SettingScreen from '../../../views/settingScreen';
 import NewsDetailScreen from '../../../views/newsScreen/detailsScreen';
 import NewsScreen from '../../../views/newsScreen';
-import DrawerMenu from '../drawNavigation'
-import Mytabs from '../tabNavigation';
-import FlightDetailScreen from '../../../views/flightDetailScreen';
-
+import GoBack from '../../../components/goBackButton';
 
 
 const NewsStack = createStackNavigator(
   {
     NewsScreen: {
       screen: NewsScreen,
-      title: ROUTES.NewsScreen,
-      navigationOptions: () => ({
+      navigationOptions: ({navigation}) => ({
         ...NavigationOptions,
+        headerLeft:()=> <GoBack navigation={navigation}/>
       }),
     },
-    NewsDetailScreen: {
+    Detail: {
       screen: NewsDetailScreen,
       title: ROUTES.NewsDetailScreen,
-      navigationOptions: () => ({
+      navigationOptions: ({navigation}) => ({
         ...NavigationOptions,
+        headerLeft:()=> <GoBack navigation={navigation}/>
       }),
     },
   },
@@ -35,4 +31,4 @@ const NewsStack = createStackNavigator(
   },
 );
 
-export default AppFlow;
+export default NewsStack;

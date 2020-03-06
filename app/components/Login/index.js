@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import { View, TextInput,Text, TouchableOpacity, Button } from 'react-native';
 import styles from './style';
-import MButton from '../mButton';
 import ROUTES from '../../servises/routes';
 import config from '../../servises/utils';
 import AsyncStorage from '@react-native-community/async-storage';
+import ClickButton from '../clickButton';
 
 const Login = ({navigation}) => {
   const [username, setUsername] = useState('');
@@ -36,7 +36,7 @@ const Login = ({navigation}) => {
         onChangeText={setPassword}
         value={password}
       />
-      <MButton
+      <ClickButton
         backgroundColor={config.indigo}
         text="Login"
         onPress={CheckLogin}/>

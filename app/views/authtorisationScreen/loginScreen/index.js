@@ -1,13 +1,13 @@
 import React from 'react';
 import {View, Alert} from 'react-native';
 import styles from './style';
-import LoginPage from '../../../components/login';
+import Login from '../../../components/login';
 
 
 const LoginScreen = ({navigation}) => {
   return (
     <View style={styles.container}>
-      <LoginPage navigation={navigation}/>
+      <Login navigation={navigation}/>
     </View>
   );
 };

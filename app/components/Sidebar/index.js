@@ -12,7 +12,7 @@ import { withNavigation } from 'react-navigation';
 const DrawerContent = ({ navigation }) => {
   const LogOut = async () => {
     await AsyncStorage.clear()
-    navigation.navigate("auth")
+    navigation.navigate(ROUTES.Auth)
   }
   return (
     <View style={styles.container}>
@@ -20,9 +20,9 @@ const DrawerContent = ({ navigation }) => {
         {images.logo}
       </View>
       <View style={styles.content}>
-        <DrawerButtons onPress={() => navigation.navigate(ROUTES.FlightScreen)} ico={iFontAwesome.calendar} text='Flights' />
+        <DrawerButtons onPress={() => navigation.navigate('Tabs')} ico={iFontAwesome.calendar} text='Flights' />
         <DrawerButtons onPress={() => navigation.navigate(ROUTES.SettingScreen)} ico={iFontAwesome.settings} text='Settings' />
-        <DrawerButtons onPress={() => navigation.navigate(ROUTES.NewsScreen)} ico={iFontAwesome.newspaper} text='News' />
+        <DrawerButtons onPress={() => navigation.navigate(ROUTES.News)} ico={iFontAwesome.newspaper} text='News' />
         <View style={styles.logout}>
           <DrawerButtons onPress={() => LogOut()} ico={iSimpleLineIcons.logout} text='Log Out' />
         </View>

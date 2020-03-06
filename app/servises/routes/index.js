@@ -12,6 +12,8 @@ const ROUTES = {
   ArrivalDetailScreen:'ArrivalDetailScreen',
   Main:'App',
   Auth:'Auth',
+  News:'News',
+  Detail:'Detail'
 
 };
 
