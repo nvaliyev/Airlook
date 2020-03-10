@@ -12,8 +12,8 @@ const ArrivalScreen = ({navigation}) => {
       </View>
       <View style={styles.flightlist}>
   <ScrollView style={styles.scroll}>
-      <FlightsCard  navigation={navigation} time={'14:03'} city={'Kiev'} info={'Boarding Completed'} flight={'LO 752(D)'}/>
-      <FlightsCard  navigation={navigation} time={'00:10'} city={'Baku'} info={'Take Off at 07:25'} flight={'AR 7071(M)'}/>
+      <FlightsCard  navigation={navigation} time={'14:03'} city={'Kiev'} info={'Arrived'} flight={'LO 752(D)'}/>
+      <FlightsCard  navigation={navigation} time={'00:10'} city={'Baku'} info={'Arrived'} flight={'AR 7071(M)'}/>
       <FlightsCard  navigation={navigation} time={'08:00'} city={'Berlin'} info={'Take Off at 06:25'} flight={'PQ 7001(D)'}/>
       <FlightsCard  navigation={navigation} time={'00:10'} city={'Hovsan'} info={'Take Off at 00:45'} flight={'PA 731(L)'}/>
       <FlightsCard  navigation={navigation} time={'00:10'} city={'Tibilisi'} info={'Take Off at 00:25'} flight={'PQ 7091(F)'}/>

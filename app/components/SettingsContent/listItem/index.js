@@ -1,5 +1,5 @@
 
-import React from 'react';
+import React, { useState } from 'react';
 import { View,} from 'react-native';
 import styles from './style';
 import { ListItem} from 'react-native-elements'
@@ -8,6 +8,8 @@ import {lang,conf,notafi} from '../const/index'
 
 const ItemsList = () => {
     
+const [Switch,SetSwitch]= useState()
+
   return (
     <View style={styles.container}>
       <View style={styles.divide} />
@@ -27,7 +29,10 @@ const ItemsList = () => {
             key={i}
             title={item.title}
             leftIcon={{ name: item.icon, color: config.eminence }}
-            switch
+            switch={{
+              value:Switch,
+              onValueChange:SetSwitch
+            }}
           />
         ))}
       <View style={styles.divide} />
