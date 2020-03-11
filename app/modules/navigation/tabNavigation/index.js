@@ -4,50 +4,36 @@ import DepartureScreen from '../../../views/departureScreen';
 import ArrivalScreen from '../../../views/arrivalScreen';
 import { Icon } from 'react-native-elements';
 import config from '../../../servises/utils';
+import Gradient from '../../../components/gradientBackround';
+import Tabs from '../../../components/tabBar';
 
 const Mytabs = createBottomTabNavigator(
     {
       Departure: {
          screen: DepartureScreen,
-         navigationOptions:{
-          tabBarIcon:() => (
-            <Icon name='flight-takeoff'  color={config.lilac} size={30}/>
-          )
-        }
         },
       Arrival: { 
         screen: ArrivalScreen,
-        navigationOptions:{
-          tabBarIcon:() => (
-            <Icon name='flight-land'  color={config.lilac} size={30}/>
-
-          )
-        }
       },
     },
-   
     {
+      tabBarComponent:({navigation}) => <Tabs navigation={navigation}/>,
       initialRouteName:'Departure',
       tabBarPosition: 'bottom',
-      swipeEnabled: true,
-      animationEnabled: true,
       tabBarOptions: {
         labelPosition:'beside-icon',
         activeTintColor: '#FFFFFF',
         inactiveTintColor: '#F8F8F8',
         style: {
-          backgroundColor: '#633689',
           height:45,
           alignItems:'center',
-
+          backgroundColor:'transparent'
         },
         labelStyle: {
           textAlign: 'center',
           fontSize:18,
         },
-        
-      
-      },
+              },
     },
 
   );

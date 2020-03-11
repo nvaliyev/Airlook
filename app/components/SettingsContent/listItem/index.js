@@ -31,7 +31,9 @@ const [Switch,SetSwitch]= useState()
             leftIcon={{ name: item.icon, color: config.eminence }}
             switch={{
               value:Switch,
-              onValueChange:SetSwitch
+              onValueChange:SetSwitch,
+              thumbColor:config.indigo,
+              trackColor:{true:config.indigo}
             }}
           />
         ))}

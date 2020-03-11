@@ -10,6 +10,7 @@ const Utils = {
     indigo: '#5d6fc4',
     eminence: '#6f347c',
     lilac: '#F7F9FC',
+    black:'#000000d9'
   };
   
  const config = {

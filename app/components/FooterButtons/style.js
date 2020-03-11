@@ -9,7 +9,7 @@ import config  from '../../servises/utils';
     height:'100%',
     justifyContent:'center',
     alignItems:'center',
-    padding:25,
+    padding:1,
     
      },
     text: 
