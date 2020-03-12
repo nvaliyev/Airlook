@@ -8,14 +8,15 @@ import FlightDetailScreen from '../../../views/flightDetailScreen';
 import NewsStack from './newsStack';
 import Burger from '../../../components/drawerButton';
 import GoBack from '../../../components/goBackButton';
+import CurrTime from '../../../components/time';
+import Header from '../../../components/header';
 
 const AppFlow = createStackNavigator(
   {
     Tabs: {
       screen: Mytabs,
       navigationOptions: ({ navigation }) => ({
-        headerLeft: () => <Burger navigation={navigation} />,
-        ...NavigationOptions,
+        header:()=> <Header navigation={navigation}/>
       }),
     },
     FlightDetail: {

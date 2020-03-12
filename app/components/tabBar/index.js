@@ -3,7 +3,6 @@ import LinearGradient from 'react-native-linear-gradient';
 import config from '../../servises/utils';
 import FooterButtons from '../footerButtons';
 import iEntypo from '../../servises/constans/Icons/entypo';
-import ROUTES from '../../servises/routes';
 import { View } from 'react-native';
 
 const Tabs = ({navigation}) => {
