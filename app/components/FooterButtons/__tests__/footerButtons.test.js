@@ -1,6 +1,6 @@
 import 'react-native';
-import React from 'react';
-import ShallowRenderer from 'react-test-renderer/shallow';
+import React from './node_modules/react';
+import ShallowRenderer from './node_modules/react-test-renderer/shallow';
 import FooterButtons from '..';
 describe(' FooterButtons', () => {
     test(' FooterButtons snapshot', () => {
