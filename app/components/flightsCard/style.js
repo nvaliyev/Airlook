@@ -2,10 +2,10 @@ import { StyleSheet } from 'react-native';
 import config from '../../servises/utils';
 const styles = StyleSheet.create({
   content: {
-    shadowOpacity: 0.8,
-    shadowOffset: { width: 0, height: 8 },
+    shadowOpacity: 0.45,
+    shadowOffset: { width: 0, height: 7},
     elevation: 8,
-    shadowRadius: 0.45,
+    shadowRadius: 6,
     backgroundColor: 'white',
     height: 95,
     marginHorizontal: 10,
