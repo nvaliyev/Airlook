@@ -10,10 +10,10 @@ const styles = StyleSheet.create({
     margin: 3,
     marginHorizontal: 25,
     borderRadius: 5,
-    shadowRadius: 10,
+    shadowRadius: 3,
     shadowColor: "#000",
-    shadowOpacity: 0.6,
-    shadowOffset: { width: 0, height: 8, },
+    shadowOpacity: 0.20,
+    shadowOffset: { width: 0, height: 6, },
     elevation: 5
   },
   text: {
