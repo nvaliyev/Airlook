@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Burgerbutton  Burger button snapshot 1`] = `
+<View
+  style={
+    Object {
+      "flexDirection": "row",
+      "marginLeft": 15,
+    }
+  }
+>
+  <TouchableOpacity
+    activeOpacity={0.2}
+    onPress={[Function]}
+  >
+    <Icon
+      allowFontScaling={false}
+      color="#F7F9FC"
+      name="navicon"
+      size={28}
+    />
+  </TouchableOpacity>
+</View>
+`;

@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GoBack Button  Goback Button  snapshot 1`] = `
+<Themed.Icon
+  color="#F7F9FC"
+  name="navigate-before"
+  onPress={[Function]}
+  size={40}
+/>
+`;

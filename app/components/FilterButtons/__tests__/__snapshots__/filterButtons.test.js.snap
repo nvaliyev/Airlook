@@ -1,0 +1,63 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[` FilterButtons   FilterButtons snapshot 1`] = `
+<Themed.ButtonGroup
+  buttonStyle={
+    Object {
+      "backgroundColor": "#F7F9FC",
+      "borderColor": "#6f347c",
+      "borderRadius": 4,
+      "borderWidth": 1,
+      "marginHorizontal": 2,
+    }
+  }
+  buttons={
+    Array [
+      "Yesterday",
+      "Today",
+      "All Flights",
+      "Tomorrow",
+    ]
+  }
+  containerStyle={
+    Object {
+      "alignItems": "center",
+      "alignSelf": "center",
+      "backgroundColor": "transparent",
+      "borderWidth": 0,
+      "flex": 1,
+      "flexDirection": "row",
+      "justifyContent": "center",
+      "maxHeight": 30,
+      "opacity": 0.9,
+      "padding": 1,
+    }
+  }
+  innerBorderStyle={
+    Object {
+      "backgroundColor": "#F7F9FC",
+      "color": "#F7F9FC",
+      "width": 0,
+    }
+  }
+  onPress={[Function]}
+  selectMultiple={true}
+  selectedButtonStyle={
+    Object {
+      "backgroundColor": "#6f347c",
+      "elevation": 3,
+    }
+  }
+  selectedIndexes={
+    Array [
+      0,
+    ]
+  }
+  textStyle={
+    Object {
+      "color": "#6f347c",
+      "fontSize": 12,
+    }
+  }
+/>
+`;

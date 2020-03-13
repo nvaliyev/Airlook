@@ -1,0 +1,251 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ArrivalDetailScreen ArrivalDetailScreen snapshot 1`] = `
+<View
+  style={
+    Object {
+      "alignContent": "center",
+      "alignItems": "center",
+      "backgroundColor": "white",
+      "flex": 1,
+      "justifyContent": "center",
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "flex": 1,
+        "flexDirection": "column",
+        "justifyContent": "center",
+        "marginHorizontal": 2,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "flexDirection": "column",
+        }
+      }
+    >
+      <Image
+        source={
+          Object {
+            "uri": "https://api.iev.aero/media/airline/files/5b556c04c49dd067143201.png",
+          }
+        }
+        style={
+          Object {
+            "height": 90,
+            "resizeMode": "contain",
+            "width": 180,
+          }
+        }
+      />
+      <Text
+        style={
+          Object {
+            "fontSize": 14,
+          }
+        }
+      >
+        Belavia Airlines
+      </Text>
+    </View>
+    <View
+      style={
+        Object {
+          "flexDirection": "row",
+          "paddingBottom": 20,
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "fontSize": 14,
+            "margin": 3,
+            "marginHorizontal": 5,
+          }
+        }
+      >
+        Flight
+      </Text>
+      <View
+        style={
+          Object {
+            "backgroundColor": "#F7F9FC",
+            "borderRadius": 3,
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "fontSize": 14,
+              "margin": 3,
+              "marginHorizontal": 5,
+            }
+          }
+        >
+          LO 752 (D)
+        </Text>
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "paddingVertical": 15,
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "fontSize": 33,
+            "fontWeight": "bold",
+            "marginHorizontal": 5,
+          }
+        }
+      >
+        Kiev-Baku
+      </Text>
+    </View>
+    <View
+      style={
+        Object {
+          "flexDirection": "row",
+          "flexWrap": "wrap",
+          "justifyContent": "center",
+          "paddingHorizontal": 15,
+          "paddingTop": 15,
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "flexDirection": "column",
+            "marginHorizontal": 10,
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "color": "grey",
+              "fontSize": 15,
+            }
+          }
+        >
+          Date
+        </Text>
+        <Text
+          style={
+            Object {
+              "fontSize": 25,
+              "fontWeight": "bold",
+            }
+          }
+        >
+          18.2.2020
+        </Text>
+      </View>
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "flexDirection": "column",
+            "marginHorizontal": 10,
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "color": "grey",
+              "fontSize": 15,
+            }
+          }
+        >
+          Time
+        </Text>
+        <Text
+          style={
+            Object {
+              "fontSize": 25,
+              "fontWeight": "bold",
+            }
+          }
+        >
+          02:05
+        </Text>
+      </View>
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "flexDirection": "column",
+            "marginHorizontal": 10,
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "color": "grey",
+              "fontSize": 15,
+            }
+          }
+        >
+          Terminal
+        </Text>
+        <Text
+          style={
+            Object {
+              "fontSize": 25,
+              "fontWeight": "bold",
+            }
+          }
+        >
+          D
+        </Text>
+      </View>
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "flexDirection": "column",
+            "marginHorizontal": 10,
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "color": "grey",
+              "fontSize": 15,
+            }
+          }
+        >
+          Gate
+        </Text>
+        <Text
+          style={
+            Object {
+              "fontSize": 25,
+              "fontWeight": "bold",
+            }
+          }
+        >
+          F4
+        </Text>
+      </View>
+    </View>
+  </View>
+</View>
+`;

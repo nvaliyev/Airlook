@@ -1,0 +1,111 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[` SideBar content  SideBar content snapshot 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "#F7F9FC",
+      "flex": 1,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#F7F9FC",
+        "justifyContent": "center",
+        "maxHeight": 70,
+        "width": "100%",
+      }
+    }
+  >
+    <Image
+      source={
+        Object {
+          "testUri": "../../../app/assets/img/logo.png",
+        }
+      }
+      style={
+        Object {
+          "maxHeight": 250,
+          "resizeMode": "contain",
+          "width": 200,
+        }
+      }
+    />
+  </View>
+  <View
+    style={
+      Object {
+        "alignContent": "center",
+        "backgroundColor": "#F7F9FC",
+        "flex": 1,
+        "flexDirection": "column",
+        "height": "80%",
+        "justifyContent": "flex-start",
+        "marginTop": 20,
+      }
+    }
+  >
+    <DrawerButtons
+      ico={
+        <Icon
+          allowFontScaling={false}
+          color="#6f347c"
+          name="calendar"
+          size={25}
+        />
+      }
+      onPress={[Function]}
+      text="Flights"
+    />
+    <DrawerButtons
+      ico={
+        <Icon
+          allowFontScaling={false}
+          color="#6f347c"
+          name="cog"
+          size={25}
+        />
+      }
+      onPress={[Function]}
+      text="Settings"
+    />
+    <DrawerButtons
+      ico={
+        <Icon
+          allowFontScaling={false}
+          color="#6f347c"
+          name="newspaper-o"
+          size={25}
+        />
+      }
+      onPress={[Function]}
+      text="News"
+    />
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "flex": 2,
+          "justifyContent": "flex-end",
+        }
+      }
+    >
+      <DrawerButtons
+        ico={
+          <Icon
+            allowFontScaling={false}
+            color="#6f347c"
+            name="logout"
+            size={25}
+          />
+        }
+        onPress={[Function]}
+        text="Log Out"
+      />
+    </View>
+  </View>
+</View>
+`;

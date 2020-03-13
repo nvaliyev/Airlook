@@ -1,0 +1,133 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[` FlightsCard  FlightsCard snapshot 1`] = `
+<TouchableOpacity
+  activeOpacity={0.2}
+  onPress={[Function]}
+  style={
+    Object {
+      "alignSelf": "stretch",
+      "backgroundColor": "white",
+      "borderLeftColor": "#6f347c",
+      "borderLeftWidth": 5,
+      "borderRadius": 4,
+      "borderTopLeftRadius": 15,
+      "elevation": 8,
+      "height": 95,
+      "marginHorizontal": 10,
+      "marginTop": 10,
+      "shadowOffset": Object {
+        "height": 8,
+        "width": 0,
+      },
+      "shadowOpacity": 0.8,
+      "shadowRadius": 0.45,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "flex": 1,
+        "flexDirection": "row",
+        "justifyContent": "space-between",
+        "marginHorizontal": 8,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "marginLeft": 5,
+        }
+      }
+    >
+      <Image
+        source={
+          Object {
+            "uri": "https://api.iev.aero/media/airline/files/5b556c04c49dd067143201.png",
+          }
+        }
+        style={
+          Object {
+            "height": 35,
+            "resizeMode": "contain",
+            "width": 55,
+          }
+        }
+      />
+      <Text
+        style={
+          Object {
+            "fontSize": 24,
+            "fontWeight": "bold",
+            "margin": 5,
+          }
+        }
+      />
+    </View>
+    <View
+      style={
+        Object {
+          "borderColor": "#F7F9FC",
+          "borderRadius": 2,
+          "borderWidth": 1,
+          "marginRight": 15,
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "fontSize": 14,
+            "fontWeight": "bold",
+            "marginHorizontal": 5,
+          }
+        }
+      />
+    </View>
+  </View>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "flex": 1,
+        "flexDirection": "row",
+        "justifyContent": "space-between",
+        "marginHorizontal": 8,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "backgroundColor": "#F7F9FC",
+          "borderRadius": 3,
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "fontSize": 14,
+            "margin": 3,
+            "marginHorizontal": 5,
+          }
+        }
+      />
+    </View>
+    <Text
+      style={
+        Object {
+          "fontSize": 14,
+          "margin": 3,
+        }
+      }
+    />
+  </View>
+</TouchableOpacity>
+`;

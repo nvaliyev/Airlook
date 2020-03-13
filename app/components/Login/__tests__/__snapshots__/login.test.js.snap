@@ -1,0 +1,67 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[` Login  Login snapshot 1`] = `
+<View
+  style={
+    Object {
+      "alignContent": "center",
+      "alignItems": "center",
+      "backgroundColor": "#f7f9fc",
+      "flex": 1,
+      "flexDirection": "column",
+      "justifyContent": "center",
+    }
+  }
+>
+  <TextInput
+    allowFontScaling={true}
+    onChangeText={[Function]}
+    placeholder="Username:"
+    rejectResponderTermination={true}
+    style={
+      Object {
+        "alignSelf": "stretch",
+        "backgroundColor": "#F7F9FC",
+        "borderColor": "#6f347c",
+        "borderRadius": 5,
+        "elevation": 10,
+        "height": 65,
+        "marginBottom": 6,
+        "marginHorizontal": 25,
+        "paddingHorizontal": 15,
+        "shadowColor": "black",
+      }
+    }
+    underlineColorAndroid="transparent"
+    value=""
+  />
+  <TextInput
+    allowFontScaling={true}
+    onChangeText={[Function]}
+    placeholder="Password:"
+    rejectResponderTermination={true}
+    secureTextEntry={true}
+    style={
+      Object {
+        "alignSelf": "stretch",
+        "backgroundColor": "#F7F9FC",
+        "borderColor": "#6f347c",
+        "borderRadius": 5,
+        "elevation": 10,
+        "height": 65,
+        "marginBottom": 6,
+        "marginHorizontal": 25,
+        "paddingHorizontal": 15,
+        "shadowColor": "black",
+      }
+    }
+    underlineColorAndroid="transparent"
+    value=""
+  />
+  <ClickButton
+    backgroundColor="#5d6fc4"
+    onPress={[Function]}
+    text="Login"
+  />
+</View>
+`;

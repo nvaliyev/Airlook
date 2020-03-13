@@ -1,12 +1,11 @@
 import 'react-native';
 import React from 'react';
 import ShallowRenderer from 'react-test-renderer/shallow';
-import LoginOrRegister from '..';
-
-describe('Login or Register', () => {
-    test('Login or Register snapshot', () => {
+import Header from '..';
+describe(' Header', () => {
+    test('Header Snap', () => {
         const renderer = new ShallowRenderer();
-        const snapshot = renderer.render(<LoginOrRegister/>);
+        const snapshot = renderer.render(< Header/>);
         expect(snapshot).toMatchSnapshot();
     });
 });

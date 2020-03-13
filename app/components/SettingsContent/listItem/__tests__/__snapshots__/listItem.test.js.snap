@@ -1,0 +1,95 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[` ItemsList  ItemsList snapshot 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "#F7F9FC",
+      "flex": 1,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "height": 30,
+      }
+    }
+  />
+  <Themed.ListItem
+    leftIcon={
+      Object {
+        "color": "#6f347c",
+        "name": "translate",
+      }
+    }
+    title="Language"
+  />
+  <View
+    style={
+      Object {
+        "height": 30,
+      }
+    }
+  />
+  <Themed.ListItem
+    leftIcon={
+      Object {
+        "color": "#6f347c",
+        "name": "notifications",
+      }
+    }
+    switch={
+      Object {
+        "onValueChange": [Function],
+        "thumbColor": "#5d6fc4",
+        "trackColor": Object {
+          "true": "#5d6fc4",
+        },
+        "value": undefined,
+      }
+    }
+    title="Notification"
+  />
+  <View
+    style={
+      Object {
+        "height": 30,
+      }
+    }
+  />
+  <Themed.ListItem
+    chevron={true}
+    leftIcon={
+      Object {
+        "color": "#6f347c",
+        "name": "mail",
+      }
+    }
+    onPress={[Function]}
+    title="Contact us"
+  />
+  <Themed.ListItem
+    chevron={true}
+    leftIcon={
+      Object {
+        "color": "#6f347c",
+        "name": "star",
+      }
+    }
+    onPress={[Function]}
+    title="Rate App"
+  />
+  <Themed.ListItem
+    chevron={true}
+    leftIcon={
+      Object {
+        "color": "#6f347c",
+        "name": "gavel",
+      }
+    }
+    onPress={[Function]}
+    title="Privacy Policy"
+  />
+</View>
+`;

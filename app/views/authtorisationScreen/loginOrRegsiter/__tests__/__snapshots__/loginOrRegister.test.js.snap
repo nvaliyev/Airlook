@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Login or Register Login or Register snapshot 1`] = `
+<View
+  style={
+    Object {
+      "alignContent": "center",
+      "alignItems": "center",
+      "backgroundColor": "#F7F9FC",
+      "flex": 1,
+      "flexDirection": "column",
+      "justifyContent": "flex-start",
+    }
+  }
+>
+  <View>
+    <Image
+      source={
+        Object {
+          "testUri": "../../../app/assets/img/logo.png",
+        }
+      }
+      style={
+        Object {
+          "maxHeight": 250,
+          "resizeMode": "contain",
+          "width": 200,
+        }
+      }
+    />
+  </View>
+  <ClickButton
+    backgroundColor="#5d6fc4"
+    onPress={[Function]}
+    text="Login"
+  />
+  <ClickButton
+    backgroundColor="#6f347c"
+    onPress={[Function]}
+    text="SignUp"
+  />
+</View>
+`;

@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[` DrawerButtons  DrawerButtons snapshot 1`] = `
+<TouchableOpacity
+  activeOpacity={0.2}
+  style={
+    Object {
+      "borderBottomColor": "#6f347c",
+      "flexDirection": "row",
+      "height": 65,
+      "justifyContent": "flex-start",
+      "marginHorizontal": 5,
+      "padding": 15,
+    }
+  }
+>
+  <Text
+    style={
+      Object {
+        "fontSize": 18,
+        "marginHorizontal": 30,
+      }
+    }
+  />
+</TouchableOpacity>
+`;

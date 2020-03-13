@@ -1,0 +1,68 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[` Tabbar Tabbar snap 1`] = `
+<LinearGradient
+  colors={
+    Array [
+      "#000000d9",
+      "#5d6fc4",
+      "#6f347c",
+      "#000000d9",
+    ]
+  }
+  end={
+    Object {
+      "x": 1,
+      "y": 0,
+    }
+  }
+  start={
+    Object {
+      "x": 0,
+      "y": 3,
+    }
+  }
+  style={
+    Object {
+      "alignItems": "center",
+      "flexDirection": "row",
+      "height": 40,
+    }
+  }
+>
+  <FooterButtons
+    ico={
+      <Icon
+        allowFontScaling={false}
+        color="#F7F9FC"
+        name="aircraft-take-off"
+        size={25}
+      />
+    }
+    onPress={[Function]}
+    text="Departure"
+  />
+  <View
+    style={
+      Object {
+        "backgroundColor": "#F7F9FC",
+        "height": 40,
+        "opacity": 0.1,
+        "width": 1,
+      }
+    }
+  />
+  <FooterButtons
+    ico={
+      <Icon
+        allowFontScaling={false}
+        color="#F7F9FC"
+        name="aircraft-landing"
+        size={25}
+      />
+    }
+    onPress={[Function]}
+    text="Arrival"
+  />
+</LinearGradient>
+`;

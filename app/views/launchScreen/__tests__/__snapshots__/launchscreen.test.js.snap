@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Laucnhscreen Launchscreensnapshot 1`] = `
+<LinearGradient
+  colors={
+    Array [
+      "#6f347c",
+      "#5d6fc4",
+    ]
+  }
+  end={
+    Object {
+      "x": 1,
+      "y": 0,
+    }
+  }
+  start={
+    Object {
+      "x": 1,
+      "y": 2,
+    }
+  }
+  style={
+    Object {
+      "alignItems": "center",
+      "flex": 1,
+      "justifyContent": "center",
+    }
+  }
+>
+  <Image
+    source={
+      Object {
+        "testUri": "../../../app/assets/img/icon.png",
+      }
+    }
+    style={
+      Object {
+        "resizeMode": "contain",
+        "width": "80%",
+      }
+    }
+  />
+  <ActivityIndicator
+    animating={true}
+    color="#6f347c"
+    hidesWhenStopped={true}
+    size="large"
+    style={
+      Object {
+        "flex": 1,
+        "position": "absolute",
+      }
+    }
+  />
+</LinearGradient>
+`;

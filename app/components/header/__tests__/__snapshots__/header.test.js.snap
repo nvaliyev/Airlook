@@ -1,0 +1,65 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[` Header Header Snap 1`] = `
+<LinearGradient
+  colors={
+    Array [
+      "#000000d9",
+      "#5d6fc4",
+      "#6f347c",
+      "#000000d9",
+    ]
+  }
+  end={
+    Object {
+      "x": 1,
+      "y": 0,
+    }
+  }
+  start={
+    Object {
+      "x": 0,
+      "y": 3,
+    }
+  }
+  style={
+    Object {
+      "alignItems": "center",
+      "flexDirection": "row",
+      "height": 60,
+      "justifyContent": "space-between",
+    }
+  }
+>
+  <Burger />
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "paddingHorizontal": 5,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "flexDirection": "row",
+          "paddingHorizontal": 1,
+        }
+      }
+    >
+      <CurrTime />
+    </View>
+    <View
+      style={Object {}}
+    >
+      <Themed.Icon
+        color="#F7F9FC"
+        name="search"
+        size={30}
+      />
+    </View>
+  </View>
+</LinearGradient>
+`;

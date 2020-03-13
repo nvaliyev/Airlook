@@ -4,7 +4,7 @@ exports[`Login Login snapshot 1`] = `
 <View
   style={
     Object {
-      "backgroundColor": "#f7f9fc",
+      "backgroundColor": "#F7F9FC",
       "flex": 1,
       "flexDirection": "column",
       "justifyContent": "center",

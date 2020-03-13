@@ -1,0 +1,116 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DepartureScreen DepartureScreen snapshot 1`] = `
+<View
+  style={
+    Object {
+      "alignContent": "center",
+      "alignItems": "center",
+      "backgroundColor": "#F7F9FC",
+      "flex": 1,
+      "flexDirection": "column",
+      "justifyContent": "center",
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "backgroundColor": "transparent",
+        "flex": 1,
+        "justifyContent": "center",
+        "margin": 5,
+        "minHeight": 25,
+      }
+    }
+  >
+    <FilterButtons />
+  </View>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "alignSelf": "stretch",
+        "backgroundColor": "transparent",
+        "flex": 11,
+        "justifyContent": "flex-start",
+      }
+    }
+  >
+    <ScrollViewMock
+      style={
+        Object {
+          "alignSelf": "stretch",
+        }
+      }
+    >
+      <FlightsCard
+        city="Kiev"
+        flight="LO 752(D)"
+        info="Boarding Completed"
+        time="14:03"
+      />
+      <FlightsCard
+        city="Baku"
+        flight="AR 7071(M)"
+        info="Take Off at 07:25"
+        time="00:10"
+      />
+      <FlightsCard
+        city="Berlin"
+        flight="PQ 7001(D)"
+        info="Take Off at 06:25"
+        time="08:00"
+      />
+      <FlightsCard
+        city="Hovsan"
+        flight="PA 731(L)"
+        info="Take Off at 00:45"
+        time="00:10"
+      />
+      <FlightsCard
+        city="Tibilisi"
+        flight="PQ 7091(F)"
+        info="Take Off at 00:25"
+        time="00:10"
+      />
+      <FlightsCard
+        city="Moskow"
+        flight="PQ 7095(A)"
+        info="Completed"
+        time="00:10"
+      />
+      <FlightsCard
+        city="Khachmaz"
+        flight="PQ 7001(F)"
+        info="Take Off at 00:25"
+        time="00:10"
+      />
+      <FlightsCard
+        city="Yasamal"
+        flight="PQ 7001(F)"
+        info="Take Off at 00:25"
+        time="00:10"
+      />
+      <FlightsCard
+        city="Azadliq"
+        flight="PQ 7001(F)"
+        info="Take Off at 00:25"
+        time="00:10"
+      />
+      <FlightsCard
+        city="Baku"
+        flight="PQ 7001(F)"
+        info="Take Off at 00:25"
+        time="00:10"
+      />
+      <FlightsCard
+        city="Baku"
+        flight="PQ 7001(F)"
+        info="Take Off at 00:25"
+        time="00:10"
+      />
+    </ScrollViewMock>
+  </View>
+</View>
+`;

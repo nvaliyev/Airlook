@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[` FooterButtons  FooterButtons snapshot 1`] = `
+<TouchableOpacity
+  activeOpacity={0.2}
+  style={
+    Object {
+      "alignItems": "center",
+      "flexDirection": "row",
+      "height": "100%",
+      "justifyContent": "center",
+      "width": "50%",
+    }
+  }
+>
+  <Text
+    style={
+      Object {
+        "color": "#F7F9FC",
+        "fontSize": 16,
+        "marginHorizontal": 15,
+      }
+    }
+  />
+</TouchableOpacity>
+`;

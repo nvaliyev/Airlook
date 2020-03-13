@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, TouchableOpacity, Text, } from 'react-native';
+import { View} from 'react-native';
 import styles from './style';
 import ROUTES from '../../servises/routes';
 import images from '../../servises/constans/images';
@@ -7,7 +7,6 @@ import iSimpleLineIcons from '../../servises/constans/Icons/simpleLineIcons';
 import iFontAwesome from '../../servises/constans/Icons/fontAwesome';
 import AsyncStorage from '@react-native-community/async-storage';
 import DrawerButtons from '../menuButtons';
-import { withNavigation } from 'react-navigation';
 
 const DrawerContent = ({ navigation }) => {
   const LogOut = async () => {
