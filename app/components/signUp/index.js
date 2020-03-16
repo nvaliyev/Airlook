@@ -6,20 +6,20 @@ import iFontAwesome from '../../servises/constans/Icons/fontAwesome';
 import AsyncStorage from '@react-native-community/async-storage';
 import ClickButton from '../clickButton';
 import ROUTES from '../../servises/routes';
-const SignUp = ({navigation}) => {
+import { connect } from 'react-redux';
+import { setUserName, setUserPassword } from '../../views/authtorisationScreen/redux/actions';
+
+const SignUp = ({ navigation }) => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [show, setshow] = useState(true);
 
-  const Register = async () => {
-    if (username === '' || password === '') {
-      alert('Please fill empty fields!')
-    } else {
-      await AsyncStorage.setItem('username', username)
-      await AsyncStorage.setItem('password', password)
-      await AsyncStorage.setItem('LoggedIn', '1')
-      navigation.navigate(ROUTES.Main)
-    }
+  const Register = () => {
+
+    setUserName({ UserName: username })
+    setUserPassword({ UserPassword: password })
+    navigation.navigate(ROUTES.Main)
+
   }
 
   return (
@@ -47,5 +47,15 @@ const SignUp = ({navigation}) => {
       />
     </View>
   );
+
 };
-export default SignUp
+const mapStateToProps = () => ({
+});
+
+
+const mapDispatchToProps = {
+  setUserName,
+  setUserPassword
+}
+
+export default connect(mapStateToProps,mapDispatchToProps)(SignUp);

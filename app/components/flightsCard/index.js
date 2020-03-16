@@ -4,14 +4,14 @@ import styles from './style';
 import ROUTES from '../../servises/routes';
 import images from '../../servises/constans/images';
 
-const FlightsCard = ({ navigation, city, time, info, flight }) => {
+const FlightsCard = ({ navigation, city, time, info, flight,logo }) => {
 
   const toDetail = () => navigation.navigate('FlightDetail')
   return (
     <TouchableOpacity onPress={toDetail} style={styles.content} >
       <View style={styles.top}>
         <View style={styles.cityView}>
-          {images.belavia}
+          {logo}
           <Text style={styles.cityText}>{city}</Text>
         </View>
         <View style={styles.timeView}>

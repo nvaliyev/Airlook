@@ -1,5 +1,5 @@
 export default {
-    IS_SHOW_NAME: 'IS_SHOW_NAME',
+    IS_LOGGED: 'IS_LOGGED',
     USER_NAME: 'USER_NAME',
     USER_PASSWORD:'USER_PASSWORD'
 }

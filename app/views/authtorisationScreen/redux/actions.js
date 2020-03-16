@@ -1,3 +1,5 @@
 import constans from "./constans";
 
-export const setIsShowName = (data) => ({ type: constans.IS_SHOW_NAME, data });
+export const isLoggedIn = (data) => ({ type: constans.IS_LOGGED, data });
+export const setUserName = (data) => ({ type: constans.USER_NAME, data });
+export const setUserPassword = (data) => ({ type: constans.USER_PASSWORD, data });

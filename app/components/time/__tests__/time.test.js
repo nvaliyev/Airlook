@@ -1,12 +1,13 @@
 import 'react-native';
 import React from 'react';
 import ShallowRenderer from 'react-test-renderer/shallow';
-import FlightDetailScreen from '..';
-
-describe('FlightDetailScreen', () => {
-    test('FlightDetailScreen snapshot', () => {
+import CurrTime from '..';
+describe('CurrTime Button', () => {
+    test(' CurrTime Button  snapshot', () => {
         const renderer = new ShallowRenderer();
-        const snapshot = renderer.render(<FlightDetailScreen/>);
+        const snapshot = renderer.render(<CurrTime/>);
         expect(snapshot).toMatchSnapshot();
     });
 });
+
+

@@ -9,10 +9,7 @@ import ROUTES from '../../servises/routes';
 
 const LaunchScreen = ({navigation}) => {
   const IsLoggedin = async () => {
-    const islogged = await AsyncStorage.getItem('LoggedIn');
-    navigation.navigate(
-      islogged !== '1' ? ROUTES.Auth : ROUTES.Main,
-    );
+    navigation.navigate(ROUTES.Auth);
 
   };
   useEffect(() => {
