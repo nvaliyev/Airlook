@@ -31,9 +31,9 @@ bottom:{
   justifyContent:'space-between'
 },
   time: {
-    fontSize: 14,
+    fontSize: 18,
     marginHorizontal: 5,
-    fontWeight: 'bold'
+    fontWeight: 'bold',
   },
   timeView: {
     borderRadius: 2, 

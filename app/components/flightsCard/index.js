@@ -1,17 +1,14 @@
 import React from 'react';
-import { View, Text, TouchableOpacity } from 'react-native';
+import { View, Text, TouchableOpacity, Image } from 'react-native';
 import styles from './style';
-import ROUTES from '../../servises/routes';
-import images from '../../servises/constans/images';
-
-const FlightsCard = ({ navigation, city, time, info, flight,logo }) => {
+const FlightsCard = ({ navigation, city, time, info, flight, logo,}) => {
 
   const toDetail = () => navigation.navigate('FlightDetail')
   return (
     <TouchableOpacity onPress={toDetail} style={styles.content} >
       <View style={styles.top}>
         <View style={styles.cityView}>
-          {logo}
+<Image source={{uri:logo}} style={{width:45,height:35,resizeMode:'contain'}} />
           <Text style={styles.cityText}>{city}</Text>
         </View>
         <View style={styles.timeView}>
@@ -20,7 +17,7 @@ const FlightsCard = ({ navigation, city, time, info, flight,logo }) => {
       </View>
       <View style={styles.bottom}>
         <View style={styles.flightView}>
-          <Text style={styles.flightText}>{flight}</Text>
+  <Text style={styles.flightText}>{flight}</Text>
         </View>
         <Text style={styles.infotext}>{info}</Text>
       </View>

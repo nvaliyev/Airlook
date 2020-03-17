@@ -1,31 +1,61 @@
-import React from 'react';
-import {View,ScrollView} from 'react-native';
+import React, { useState, useEffect } from 'react';
+import { View,FlatList} from 'react-native';
 import styles from './style';
 import FlightsCard from '../../components/flightsCard/index';
 import FilterButtons from '../../components/filterButtons';
+import moment from 'moment';
 
-const ArrivalScreen = ({navigation}) => {
-  return (
+const ArrivalScreen = ({ navigation }) => {
+
+  const [loading, setloading] = useState(false)
+  const [date, setDate] = useState()
+  const [data, setData] = useState()
+
+  const toDay = moment().format("DD-MM-YYYY");
+  console.log('Today------>>..........................', toDay)
+
+  useEffect(() => {
+    const fetchData = async () => {
+    const response = await fetch(`https://api.iev.aero/api/flights/${date}`)
+    const json = await response.json()
+    setData(json.body.arrival) 
+  };
+  fetchData()
+      setDate(toDay)
+  }, [])
+
+  const renderItem = (item) => {
+
+    const api = {
+      flight: `${item['carrierID.IATA']} ${item.fltNo} (${item.term}) `,
+      city: item['airportFromID.name_en'],
+      logo: `https://api.iev.aero${item.logo}`,
+      departuretime: moment(item.timeDepShedule).format("HH:m"),
+      status:item.status
+    }
+    return (
+      <FlightsCard navigation={navigation} time={api.departuretime} city={api.city} info={api.status} flight={api.flight} logo={api.logo} />
+    )
+
+  }
+
+  return !data ? null : (
     <View style={styles.container}>
-      <View style ={styles.filters}>
-        <FilterButtons/>
+      <View style={styles.filters}>
+        <FilterButtons />
       </View>
       <View style={styles.flightlist}>
-  <ScrollView style={styles.scroll}>
-      <FlightsCard  navigation={navigation} time={'12:00'} city={'Lenkaran'} info={'Arrived'} flight={'LO 752(D)'}/>
-      <FlightsCard  navigation={navigation} time={'00:10'} city={'Baku'} info={'Arrived'} flight={'AR 7071(M)'}/>
-      <FlightsCard  navigation={navigation} time={'08:00'} city={'Berlin'} info={'Take Off at 06:25'} flight={'PQ 7001(D)'}/>
-      <FlightsCard  navigation={navigation} time={'00:10'} city={'Hovsan'} info={'Take Off at 00:45'} flight={'PA 731(L)'}/>
-      <FlightsCard  navigation={navigation} time={'00:10'} city={'Tibilisi'} info={'Take Off at 00:25'} flight={'PQ 7091(F)'}/>
-      <FlightsCard  navigation={navigation} time={'00:10'} city={'Moskow'} info={'Completed'} flight={'PQ 7095(A)'}/>
-      <FlightsCard  navigation={navigation} time={'00:10'} city={'Khachmaz'} info={'Take Off at 00:25'} flight={'PQ 7001(F)'}/>
-      <FlightsCard  navigation={navigation} time={'00:10'} city={'Yasamal'} info={'Take Off at 00:25'} flight={'PQ 7001(F)'}/>
-      <FlightsCard  navigation={navigation} time={'00:10'} city={'Azadliq'} info={'Take Off at 00:25'} flight={'PQ 7001(F)'}/>
-      <FlightsCard  navigation={navigation} time={'00:10'} city={'Baku'} info={'Take Off at 00:25'} flight={'PQ 7001(F)'}/>
-      <FlightsCard  navigation={navigation} time={'00:10'} city={'Baku'} info={'Take Off at 00:25'} flight={'PQ 7001(F)'}/>
-</ScrollView>
+
+        <FlatList
+          style={{ alignSelf: 'stretch' }}
+          keyExtractor={item => item.id}
+          data={data}
+          renderItem={({ item }) => renderItem(item)}
+        />
       </View>
-</View>
+    </View>
   )
 }
+
 export default ArrivalScreen;
+
