@@ -1,3 +1,3 @@
- const ButtonsList = ['Yesterday', 'Today', 'All Flights', 'Tomorrow']
+ const ButtonsList = ['Yesterday', 'Today','Tomorrow','All Flights']
 
 export default ButtonsList;

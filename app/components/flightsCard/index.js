@@ -1,11 +1,10 @@
 import React from 'react';
 import { View, Text, TouchableOpacity, Image } from 'react-native';
 import styles from './style';
-const FlightsCard = ({ navigation, city, time, info, flight, logo,}) => {
+const FlightsCard = ({ city, time, info, flight, logo, onPress}) => {
 
-  const toDetail = () => navigation.navigate('FlightDetail')
   return (
-    <TouchableOpacity onPress={toDetail} style={styles.content} >
+    <TouchableOpacity onPress={onPress} style={styles.content} >
       <View style={styles.top}>
         <View style={styles.cityView}>
 <Image source={{uri:logo}} style={{width:45,height:35,resizeMode:'contain'}} />

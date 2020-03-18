@@ -6,18 +6,17 @@ import ButtonsList from './const';
 
 const FilterButtons = () => {
 
-  const [selectedIndex, updateIndex] = useState([0]);
+  const [selectedIndex, updateIndex] = useState([1]);
 
   return (
     <ButtonGroup
       onPress={updateIndex}
-      selectedIndexes={selectedIndex}
+      selectedIndex={selectedIndex}
       textStyle={styles.text}
       selectedButtonStyle={styles.selectedText}
       buttonStyle={styles.button}
       buttons={ButtonsList}
       containerStyle={styles.container}
-      selectMultiple={true}
       innerBorderStyle={styles.innerBorder}
     />
   )

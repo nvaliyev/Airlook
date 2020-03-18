@@ -25,19 +25,24 @@ const ArrivalScreen = ({ navigation }) => {
   }, [])
 
   const renderItem = (item) => {
-
     const api = {
       flight: `${item['carrierID.IATA']} ${item.fltNo} (${item.term}) `,
       city: item['airportFromID.name_en'],
+      cityDetail:`${item['airportFromID.name_en']}-Kiev`,
+      terminal:item.term,
+      airline:item.airline.en.name,
+      gate:item.gateNo,
       logo: `https://api.iev.aero${item.logo}`,
-      departuretime: moment(item.timeDepShedule).format("HH:m"),
+      time: moment(item.timeArrShedule).format("HH:mm"),
+      date: moment(item.timeDepShedule).format("DD-MM-YYYY"),
       status:item.status
     }
     return (
-      <FlightsCard navigation={navigation} time={api.departuretime} city={api.city} info={api.status} flight={api.flight} logo={api.logo} />
+      <FlightsCard onPress={() => navigation.navigate('FlightDetail',{data:api})} time={api.time} city={api.city} info={api.status} flight={api.flight} logo={api.logo} />
     )
 
   }
+
 
   return !data ? null : (
     <View style={styles.container}>
@@ -47,10 +52,12 @@ const ArrivalScreen = ({ navigation }) => {
       <View style={styles.flightlist}>
 
         <FlatList
+        contentContainerStyle={{paddingBottom:10}}
           style={{ alignSelf: 'stretch' }}
           keyExtractor={item => item.id}
           data={data}
           renderItem={({ item }) => renderItem(item)}
+      
         />
       </View>
     </View>

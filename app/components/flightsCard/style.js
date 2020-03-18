@@ -42,7 +42,7 @@ bottom:{
     borderColor: config.lilac
   },
 cityText:{
-  fontSize:24,
+  fontSize:20,
   margin:5,
   fontWeight:'bold'
 },
