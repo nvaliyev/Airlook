@@ -28,6 +28,8 @@ const Header = ({ navigation }) => {
             </View>
 
         </LinearGradient>
+
+
     );
 
 };

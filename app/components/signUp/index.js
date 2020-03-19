@@ -12,7 +12,7 @@ import { setUserName, setUserPassword } from '../../views/authtorisationScreen/r
 const SignUp = ({ navigation }) => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
-  const [show, setshow] = useState(true);
+  const [show, setshow] = useState(false);
 
   const Register = () => {
 
@@ -22,24 +22,31 @@ const SignUp = ({ navigation }) => {
 
   }
 
+
   return (
     <View style={styles.container}>
+            <View style={styles.input}>
       <TextInput
-        style={styles.input}
+        style={{flex:1}}
         placeholder="Username:"
         onChangeText={setUsername}
         value={username}
+        underlineColorAndroid="transparent"
       />
+      </View>
+      <View style={styles.input}>
       <TextInput
         secureTextEntry={show}
-        style={styles.input}
+        style={{flex:1}}
         placeholder="Password:"
         onChangeText={setPassword}
         value={password}
+        underlineColorAndroid="transparent"
       />
-      <TouchableOpacity style={styles.b}>
+      <TouchableOpacity onPress={()=>setshow(!show)}>
         {iFontAwesome.eye}
       </TouchableOpacity>
+      </View>
       <ClickButton
         text="SignUp"
         onPress={Register}

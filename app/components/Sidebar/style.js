@@ -8,24 +8,17 @@ import config from '../../servises/utils';
     
   },
   top: {
-    width: '100%',
-    maxHeight:70,
-    backgroundColor: config.lilac,
+    backgroundColor:'transparent',
     justifyContent: 'center',
     alignItems: 'center',
   },
-  logo: {
-    alignContent: 'center',
-    justifyContent: 'center',
-    fontSize: 60,
-    color: config.eminence,
-    alignSelf: 'center',
-  
+  shadow:{
+    height:2,
+    backgroundColor:'transparent',
+    elevation:5,
   },
-
   content: {
-    flex: 1,
-    height:'80%',
+    flex:7,
     backgroundColor: config.lilac,
     flexDirection:'column',
     justifyContent:'flex-start',

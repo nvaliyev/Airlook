@@ -6,10 +6,12 @@ import config from '../../servises/utils';
 import AsyncStorage from '@react-native-community/async-storage';
 import ClickButton from '../clickButton';
 import { connect } from 'react-redux';
+import iFontAwesome from '../../servises/constans/Icons/fontAwesome';
 
 const Login = ({navigation}) => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
+  const [show, setshow] = useState(false);
   const User = { username: 'a', password: 'a' };
 
   const CheckLogin = (state) => {
@@ -22,19 +24,26 @@ const Login = ({navigation}) => {
 
   return (
     <View style={styles.container}>
+      <View style={styles.input}>
       <TextInput
-        style={styles.input}
+        style={{flex:1}}
         placeholder="Username:"
         onChangeText={setUsername}
         value={username}
       />
+      </View>
+            <View style={styles.input}>
       <TextInput
-        secureTextEntry={true}
-        style={styles.input}
+        secureTextEntry={show}
+        style={{flex:1}}
         placeholder="Password:"
         onChangeText={setPassword}
         value={password}
       />
+       <TouchableOpacity onPress={()=>setshow(!show)} >
+        {iFontAwesome.eye}
+      </TouchableOpacity>
+      </View>
       <ClickButton
         backgroundColor={config.indigo}
         text="Login"

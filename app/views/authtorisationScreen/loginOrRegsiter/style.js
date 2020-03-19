@@ -5,11 +5,15 @@ import config from '../../../servises/utils';
     container: {
         flex: 1,
         backgroundColor:config.lilac,
-        justifyContent: 'flex-start',
+        justifyContent: 'center',
         alignContent:'center',
         alignItems:'center',
         flexDirection:'column'
     },
+    logo:{
+      alignSelf:'center',
+   padding:15
+    }
    
 });
 export default styles

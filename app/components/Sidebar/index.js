@@ -7,6 +7,8 @@ import iSimpleLineIcons from '../../servises/constans/Icons/simpleLineIcons';
 import iFontAwesome from '../../servises/constans/Icons/fontAwesome';
 import AsyncStorage from '@react-native-community/async-storage';
 import DrawerButtons from '../menuButtons';
+import LinearGradient from 'react-native-linear-gradient';
+import config from '../../servises/utils';
 
 const DrawerContent = ({ navigation }) => {
   const LogOut = async () => {
@@ -15,9 +17,16 @@ const DrawerContent = ({ navigation }) => {
   }
   return (
     <View style={styles.container}>
-      <View style={styles.top}>
-        {images.logo}
-      </View>
+      <LinearGradient
+      colors={[config.black, config.indigo, config.eminence,config.black]}
+      style={styles.top}
+      start={{x: 0, y: 3}}
+      end={{x: 1, y: 0}}
+      
+    > 
+     {images.logo}
+      </LinearGradient>
+      <View style={styles.shadow}/>
       <View style={styles.content}>
         <DrawerButtons onPress={() => navigation.navigate('Tabs')} ico={iFontAwesome.calendar} text='Flights' />
         <DrawerButtons onPress={() => navigation.navigate(ROUTES.SettingScreen)} ico={iFontAwesome.settings} text='Settings' />

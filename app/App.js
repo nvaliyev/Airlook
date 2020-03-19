@@ -10,7 +10,7 @@ const App = () => {
     <Provider store={store}>
       <PersistGate loading={null} persistor={persistor}>
       <SafeAreaView style={{flex:1}}> 
-          <StatusBar barStyle='dark-content' hidden={false} backgroundColor={config.lilac} translucent={false} />
+          <StatusBar barStyle='light-content' hidden={false} backgroundColor={config.indigo} translucent={false} />
           <SwitchNavigator />
           </SafeAreaView>
       </PersistGate>

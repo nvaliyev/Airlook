@@ -26,7 +26,7 @@ const LaunchScreen = ({navigation}) => {
       style={styles.View}
       start={{x: 1, y: 2}}
       end={{x: 1, y: 0}}>
-      {images.splashlogo}
+      {images.logo}
       <ActivityIndicator size='large' color={config.eminence} style={styles.indicator} />
     </LinearGradient>
   );

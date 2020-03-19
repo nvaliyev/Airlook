@@ -9,7 +9,7 @@ const images = {
     <Image source={img.splashlogo} style={styles.Splashlogo} />
   ),
   logo:( 
-    <Image source={img.logo} style={{width: 200, resizeMode:'contain', maxHeight:250,}} />
+    <Image source={img.logo} style={{width: 250, resizeMode:'contain', maxHeight:250,}} />
 
   ),
 belavia:( 

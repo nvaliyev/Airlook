@@ -13,6 +13,7 @@ const styles = StyleSheet.create({
         paddingHorizontal:5,
         alignItems:'center'
     },
+
     search:{
 
     },
