@@ -21,7 +21,7 @@ const DepartureScreen = ({ navigation }) => {
   };
   fetchData()
       setDate(toDay)
-  }, [])
+  }, [])       
 
   const renderItem = (item) => {
     const api = {

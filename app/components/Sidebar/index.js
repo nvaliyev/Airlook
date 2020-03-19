@@ -9,6 +9,7 @@ import AsyncStorage from '@react-native-community/async-storage';
 import DrawerButtons from '../menuButtons';
 import LinearGradient from 'react-native-linear-gradient';
 import config from '../../servises/utils';
+import { ScrollView } from 'react-native-gesture-handler';
 
 const DrawerContent = ({ navigation }) => {
   const LogOut = async () => {
